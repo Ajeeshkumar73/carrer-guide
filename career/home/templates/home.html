@@ -1,0 +1,662 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Career Guidance</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'css/banner.css' %}">
+  <link rel="stylesheet" href="{% static 'css/front.css' %}">
+<style>
+  /* Circle styling */
+  .step-circle {
+    @apply absolute left-0 top-0 w-10 h-10 flex items-center justify-center rounded-full font-bold shadow-lg transition-colors duration-1000;
+  }
+
+  /* Animate color when scrolled into view */
+  [data-aos].aos-animate .step-circle {
+    background-color: #2563eb; /* Tailwind blue-600 */
+  }
+
+  * Custom social icons for accessibility and consistent style */
+    .social-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      transition: color 0.3s ease;
+    }
+    .social-icon:hover svg {
+      color: #3b82f6; /* Tailwind blue-500 */
+    }
+    a:focus-visible {
+      outline: 2px solid #2563eb; /* Tailwind blue-600 */
+      outline-offset: 2px;
+    }
+</style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="relative w-full h-[710px] flex flex-col bg-cover bg-center" 
+    style="background-image: url('{% static 'images/hero.jpg' %}');height:750px">
+
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70 pointer-events-none"></div>
+
+
+    <!-- Navbar -->
+    <div class="relative w-full flex justify-between items-center px-12 py-6 z-10">
+      <div class="text-lg font-semibold tracking-widest">CAREERGUIDE</div>
+      <nav class="flex items-center space-x-8 text-sm font-medium" style="margin-right: 70px;">
+    <a href="#how-it-works" class="hover:text-blue-600">How It Works</a>
+    <a href="#community" class="hover:text-blue-600">Community</a>
+    <a href="#review" class="hover:text-blue-600">Reviews</a>
+    <a href="#faqs" class="hover:text-blue-600">FAQs</a>
+    <a href="#about" class="hover:text-blue-600">About</a>
+        <!--<button class="btn-subscribe" onclick="openPopup()">Sign in</button>-->
+      </nav>
+    </div>
+
+    <!-- Hero Text -->
+    <div class="relative flex flex-col justify-center items-center text-center flex-1 px-6 z-10">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-light tracking-wide leading-tight mb-6">
+        THE FUTURE OF<br />CAREER GUIDANCE IS HERE
+      </h1>
+      <p class="text-gray-200 text-lg sm:text-xl max-w-2xl mx-auto mb-12 font-normal">
+        Discover personalized career pathways, expert mentorship, and the skills you need to succeed in your dream profession.
+      </p>
+     <a href="{% url 'user_page' %}">
+      <button class="btn-subscribe px-8 py-3 text-lg" style="border-radius:5px;" onclick="window.location.href='userpage.html'" >Find Your Path</button>
+     </a>
+    </div>
+  </section>
+
+  <button id="scrollUpBtn" 
+  class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-black text-white flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"
+  aria-label="Scroll to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+
+  <!-- About 1 -->
+  <div class="about">
+    <section class="about-section" aria-label="About CareerPath" >
+      <div class="about-text">
+        <div class="label">Vision</div>
+        <div class="title">CareerPath—Discover Your Ideal Career Journey</div>
+        <div class="description">
+          CareerPath is dedicated to helping individuals discover their ideal career paths. 
+          Our platform offers a comprehensive suite of tools and resources, including personalized 
+          career assessments, detailed career profiles, and expert guidance.
+
+          Whether you're a student exploring options or a professional seeking a career change, 
+          CareerPath provides the insights and support you need to make informed decisions 
+          and achieve your aspirations.
+        </div>
+      </div>
+      <img src="{% static 'images/career2.jpg' %}" alt="Career Path illustration" class="about-image" loading="lazy"/>
+    </section>
+  </div>
+
+<!--feature-->
+<div class="body-feature">
+  <section id="feature" class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold">Why PathFinder is Your Career Co-Pilot</h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">We go beyond job titles to find your true calling.</p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:-translate-y-2 transition" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center justify-center w-16 h-16 rounded-full border-2 border-black text-black mb-6">
+            <i class="bi bi-robot text-2xl"></i>
+          </div>
+          <h5 class="text-xl font-semibold">AI-Powered Psychometrics</h5>
+          <p class="mt-3 text-gray-600 dark:text-gray-300">
+            Our algorithm analyzes your personality, work styles, and interests to provide hyper-personalized recommendations.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:-translate-y-2 transition" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center justify-center w-16 h-16 rounded-full border-2 border-black text-black mb-6">
+            <i class="bi bi-graph-up-arrow text-2xl"></i>
+          </div>
+          <h5 class="text-xl font-semibold" >Real-Time Market Data</h5>
+          <p class="mt-3 text-gray-600 dark:text-gray-300">
+            We track millions of data points on job trends, salary expectations, and future-proof skills to keep you ahead.
+          </p>
+        </div>
+
+
+      <!-- Card 3 -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:-translate-y-2 transition" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center justify-center w-16 h-16 rounded-full border-2 border-black text-black mb-6">
+            <i class="bi bi-person-check text-2xl"></i>
+          </div>
+          <h5 class="text-xl font-semibold" >Actionable Growth Plans</h5>
+          <p class="mt-3 text-gray-600 dark:text-gray-300">
+            Get a clear roadmap with courses, certifications, and projects to bridge any skill gaps for your dream job.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<section id="career" class="py-20 bg-gray-100 dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold " style="color: #646464;">Explore Diverse Career Tracks</h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">From code to creativity, find your niche.</p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-md text-center hover:shadow-xl transition" data-aos="zoom-in-up" data-aos-delay="100">
+        <i class="bi bi-heart-pulse-fill text-3xl text-black mb-3"></i>
+        <h6>Healthcare & Wellness</h6>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-md text-center hover:shadow-xl transition" data-aos="zoom-in-up" data-aos-delay="150">
+        <i class="bi bi-palette-fill text-3xl text-black mb-3"></i>
+        <h6>Creative Arts & Design</h6>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-md text-center hover:shadow-xl transition" data-aos="zoom-in-up" data-aos-delay="200">
+        <i class="bi bi-briefcase-fill text-3xl text-black mb-3"></i>
+        <h6>Business & Finance</h6>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-md text-center hover:shadow-xl transition" data-aos="zoom-in-up" data-aos-delay="250">
+        <i class="bi bi-book-half text-3xl text-black mb-3"></i>
+        <h6>Education & Training</h6>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-md text-center hover:shadow-xl transition" data-aos="zoom-in-up" data-aos-delay="300">
+        <i class="bi bi-tools text-3xl text-black mb-3"></i>
+        <h6>Engineering & Trades</h6>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-md text-center hover:shadow-xl transition" data-aos="zoom-in-up" data-aos-delay="350">
+        <i class="bi bi-megaphone-fill text-3xl text-black mb-3"></i>
+        <h6>Marketing & Communications</h6>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-md text-center hover:shadow-xl transition" data-aos="zoom-in-up" data-aos-delay="400">
+        <i class="bi bi-eyedropper text-3xl text-black mb-3"></i>
+        <h6>Science & Research</h6>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-md text-center hover:shadow-xl transition" data-aos="zoom-in-up" data-aos-delay="450">
+        <i class="bi bi-geo-alt text-3xl text-black mb-3"></i>
+        <h6>Hospitality & Tourism</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+
+
+
+  <!-- Fixed Top Banner -->
+<div class="top-banner">
+  <img src="{% static 'images/hero.jpg' %}" alt="Career Path illustration" class="banner" loading="lazy"/>
+</div>
+
+<section id="how-it-works" class="py-20 bg-white dark:bg-gray-900">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold">Your Journey in 3 Simple Steps</h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+        Clarity is closer than you think.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline mt-16">
+      
+      <!-- Step 1 -->
+      <div class="timeline-step" data-aos="fade-right">
+        <div class="timeline-icon">1</div>
+        <h5>Take the 5-Minute Quiz</h5>
+        <p>Our interactive assessment quickly understands your core traits, skills, and aspirations. No resumes needed.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="timeline-step" data-aos="fade-right" data-aos-delay="100">
+        <div class="timeline-icon">2</div>
+        <h5>AI Does the Heavy Lifting</h5>
+        <p>Our algorithm cross-references your profile with thousands of career paths and market trends to find your top matches.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="timeline-step" data-aos="fade-right" data-aos-delay="200">
+        <div class="timeline-icon">3</div>
+        <h5>Unlock Your Personal Blueprint</h5>
+        <p>Receive a detailed report with your best-fit careers, skill development plans, and actionable next steps.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Main Banner Section -->
+<section class="main-banner">
+  <div class="content-section">
+    <div class="image-container">
+      <img src="{% static 'images/community.avif' %}" alt="Career Guide Community" />
+    </div>
+    <div class="text-container">
+      <h1 class="com-head">WELCOME TO<br>CAREER GUIDE COMMUNITY</h1>
+      <p>
+        Join a space where students, professionals, and mentors connect to explore diverse career paths. 
+        Share experiences, gain guidance, and discover opportunities that help shape your future. 
+        Our community empowers you to make informed choices and grow with confidence in your journey.
+      </p>
+      <button class="btn" onclick="openPopup()">Explore Community</button>
+    </div>
+  </div>
+</section>
+
+  <!-- About 2 -->
+  <div class="about2">
+    <section class="about-section2" id="about">
+      <div class="about-content">
+        <div class="small-heading">About</div>
+        <h2 class="title2">AI-Powered Career Guidance</h2>
+        <p class="description2">
+          Our platform helps students choose the right career path with confidence.
+          It analyzes academic performance, personal interests, and skills to recommend
+          suitable fields like engineering, medicine, design, or management.
+        </p>
+        <p class="description2">
+          Students get personalized career suggestions after key milestones such as +2 or
+          undergraduate studies. They can also connect with communities to share resources,
+          learn from experts, and explore new opportunities.
+        </p>
+        <p class="description2">
+          With a built-in AI voice assistant, users enjoy hands-free support that guides them
+          through career options, educational needs, job prospects, and skill development paths.
+        </p>
+        <button class="btn-read-more">
+          Learn More
+          <svg viewBox="0 0 24 24"><path d="M12 4l1.41 1.41L8.83 10H20v2H8.83l4.58 4.59L12 18l-8-8z"/></svg>
+        </button>
+      </div>
+      <div class="about-image2">
+        <img src="{% static 'images/career3.webp' %}" alt="Career guidance illustration"/>
+      </div>
+    </section>
+  </div>
+
+  <div style="background-color:white;"> 
+  <!--review-->
+   <div class="reviewmain" id="review" data-aos="fade-up" style="font-size:20px">
+  <div class="left" style=" max-width: 450px;">
+    <div class="subheading" style="font-size:20px;">Real People, Real Impact</div>
+    <p>Don't just take our word for it.</p>
+    <!--<button class="button" id="openingsBtn" type="button">
+      Openings
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 3l5 4-5 4" />
+      </svg>
+    </button>-->
+  </div>
+
+  <div class="right" id="reviewBox">
+    <div class="reviews-slider">
+    {% for r in reviews %}
+    <div class="review {% if forloop.first %}active{% endif %}">
+      
+      <h3>{{ r.user.username }}</h3>
+      <div class="stars">
+         {% for i in "12345"|make_list %}
+        {% if forloop.counter <= r.rating %}
+          <span class="star filled">★</span>
+        {% else %}
+          <span class="star">☆</span>
+        {% endif %}
+      {% endfor %}
+        </div>
+      <p>{{ r.text }}</p>
+      <small class="date">{{ r.created_at|date:"M d, Y" }}</small>
+    </div>
+    {% empty %}
+    <p>No reviews yet. Be the first to post!</p>
+  {% endfor %}
+  </div>
+    <div class="dots" id="dots"></div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ Section -->
+<!-- FAQ Section -->
+<section id="faq" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Heading -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-black dark:text-white">Have Questions? We Have Answers.</h2>
+      <p class="mt-4 text-lg text-gray-700 dark:text-gray-300">
+        Everything you need to know to get started.
+      </p>
+    </div>
+
+    <!-- Accordion -->
+    <div class="max-w-3xl mx-auto space-y-4" data-aos="fade-up">
+      
+      <!-- Item -->
+<div class="rounded-lg overflow-hidden border border-gray-200">
+  <button class="faq-btn w-full flex justify-between items-center px-5 py-4 text-left text-lg font-medium text-gray-800 dark:text-white bg-gray-100 dark:bg-gray-800 focus:outline-none" data-target="faq1">
+    Is this really free?
+    <!-- SVG Down Arrow -->
+    <svg class="arrow transition-transform duration-300 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div id="faq1" class="faq-content hidden px-5 pb-4 text-gray-600 dark:text-gray-300">
+    Yes! Our core AI matching and career recommendations are 100% free. 
+    We offer optional premium reports with in-depth analysis and personalized learning paths.
+  </div>
+</div>
+
+
+      <!-- Item -->
+      <div class="rounded-lg overflow-hidden border border-gray-200">
+        <button class="faq-btn w-full flex justify-between items-center px-5 py-4 text-left text-lg font-medium text-gray-800 dark:text-white bg-gray-100 dark:bg-gray-800 focus:outline-none" data-target="faq2">
+          How long does the assessment take?
+          <svg class="arrow transition-transform duration-300 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+        </button>
+        <div id="faq2" class="faq-content hidden px-5 pb-4 text-gray-600 dark:text-gray-300">
+          About 5 minutes. It's designed to be quick, insightful, and honestly, pretty fun. Faster than picking a movie on Netflix!
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="rounded-lg overflow-hidden border border-gray-200">
+        <button class="faq-btn w-full flex justify-between items-center px-5 py-4 text-left text-lg font-medium  text-gray-800 dark:text-white bg-gray-100 dark:bg-gray-800 focus:outline-none" data-target="faq3">
+          How accurate is the AI?
+         <svg class="arrow transition-transform duration-300 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+        </button>
+        <div id="faq3" class="faq-content hidden px-5 pb-4 text-gray-600 dark:text-gray-300">
+          Our algorithm is built on established psychometric principles and is continuously updated with real-world career data. 
+          While no system is perfect, over 85% of our users report feeling that their top 3 matches are highly relevant to them.
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="rounded-lg overflow-hidden border border-gray-200">
+        <button class="faq-btn w-full flex justify-between items-center px-5 py-4 text-left text-lg font-medium text-gray-800 dark:text-white bg-gray-100 dark:bg-gray-800 focus:outline-none" data-target="faq4">
+          What if I don't like my results?
+         <svg class="arrow transition-transform duration-300 w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+        </button>
+        <div id="faq4" class="faq-content hidden px-5 pb-4 text-gray-600 dark:text-gray-300">
+          No problem! You can retake the quiz anytime, or adjust your preferences in your profile. 
+          Your career journey is dynamic, and PathFinder is designed to adapt with you.
+        </div>
+      </div>
+    </div>  
+  </div>
+</section>
+
+<!-- Accordion JS -->
+<script>
+  document.querySelectorAll(".faq-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      const targetId = button.getAttribute("data-target");
+      const content = document.getElementById(targetId);
+      const arrow = button.querySelector(".arrow");
+
+      // Toggle content
+      content.classList.toggle("hidden");
+
+      // Rotate arrow smoothly
+      arrow.classList.toggle("rotate-180");
+    });
+  });
+</script>
+
+
+<!-- CTA Section -->
+<section class="py-20 bg-black">
+  <div class="max-w-5xl mx-auto px-6 text-center text-white" data-aos="zoom-in-up">
+    <h2 class="text-4xl font-bold" style="font-weight:500;">Ready to Find Your Calling?</h2>
+    <p class="mt-6 text-lg max-w-2xl mx-auto">
+      Your personalized career roadmap is just a few clicks away. <br>
+      Start your free assessment now and take the first step towards a future you love.
+    </p>
+    <a href="{% url 'user_page' %}">
+    <button  id="btn-start" style=" border:3px solid white; padding: 10px; margin-top:20px;  border-radius:10px;  transition: all 0.3s ease;
+      font-weight: bold; width:185px; height:55px; font-size:15px;">Let's Do This! <i class="bi bi-arrow-right-short"></i></button>
+    </a>
+  </div>
+</section>
+
+<!-- Accordion JS -->
+<script>
+  function toggleFaq(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle("hidden");
+  }
+</script>
+
+
+    <footer>
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+      <!-- Left Side -->
+      <div class="flex flex-col items-start space-y-1">
+        <h2 class="text-white text-xl font-semibold select-text">Career Guide</h2>
+        <p class="copyright">© 2024 CareerPath. All rights reserved.</p>
+      </div>
+
+      <!-- Center Social Icons -->
+      <nav class="flex space-x-8" aria-label="Social media links">
+        <a href="#" class="social-icon text-gray-300 hover:text-white" aria-label="Facebook">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" >
+            <path d="M22.675 0h-21.35C.585 0 0 .585 0 1.308v21.385C0 23.415.585 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128v-2.672c0-3.1 1.894-4.788 4.658-4.788 1.325 0 2.466.099 2.797.143v3.24h-1.917c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.415 24 24 23.415 24 22.693V1.308C24 .585 23.415 0 22.675 0z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon text-gray-300 hover:text-white" aria-label="X (Twitter)">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+            <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.608 1.794-1.574 2.163-2.723-.95.568-2.005.978-3.127 1.2-.897-.959-2.178-1.559-3.594-1.559-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.061c0 2.281 1.581 4.179 3.68 4.612-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.377 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.209 7.557 2.209 9.054 0 14-7.496 14-13.986 0-.21 0-.423-.015-.633.962-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon text-gray-300 hover:text-white" aria-label="LinkedIn">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" >
+            <path d="M20.447 20.452H16.89v-5.569c0-1.328-.024-3.037-1.851-3.037-1.851 0-2.134 1.445-2.134 2.939v5.667H9.309V9h3.413v1.561h.049c.476-.9 1.637-1.851 3.37-1.851 3.603 0 4.268 2.369 4.268 5.451v6.29zM5.337 7.433a1.992 1.992 0 11.001-3.985 1.992 1.992 0 01-.001 3.985zm1.772 13.02H3.568V9h3.54v11.453zM22.225 0H1.771C.792 0 0 .774 0 1.73v20.54C0 23.226.792 24 1.771 24h20.451c.98 0 1.778-.774 1.778-1.73V1.73C24 .774 23.205 0 22.225 0z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon text-gray-300 hover:text-white" aria-label="Instagram">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+            <path d="M7.75 2a5.75 5.75 0 00-5.75 5.75v8.5a5.75 5.75 0 005.75 5.75h8.5a5.75 5.75 0 005.75-5.75v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5a4.25 4.25 0 014.25 4.25v8.5a4.25 4.25 0 01-4.25 4.25h-8.5a4.25 4.25 0 01-4.25-4.25v-8.5a4.25 4.25 0 014.25-4.25zm8.75 2.25a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z" />
+          </svg>
+        </a>
+      </nav>
+
+      <!-- Right Side Links -->
+      <div class="flex space-x-6 text-sm text-gray-400">
+        <a href="#" class="hover:underline focus-visible:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline focus-visible:underline">Terms of Service</a>
+      </div>
+    </div>
+      
+    
+
+  </footer>
+  
+  
+
+
+  <!--login-->
+  <div class="auth-popup" id="authPopup">
+    <button class="close-btn" type="button" onclick="closePopup()" aria-label="Close">X</button>
+    
+    <div id="loginForm" class="slide-in">
+      <h3>SIGN IN</h3>
+      <p>Sign in to Career Guide.</p></br>
+      <form method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+        <label class="email-label" for="email">Email </label> 
+        <label class="user-label" for="password">Password </label></br>
+
+        <input type="email" id="email" name="email" required placeholder="Enter your email" />
+        <input type="password" id="password" name="password" required placeholder="Enter your password" />
+        <button type="submit">Sign in</button></br></br>
+        <span class="toggle-link" onclick="toggleForms('register')">Don't have an account? Register</span>
+      </form>
+    </div>
+
+    <div id="registerForm" style="display:none;">
+      <h3>SIGN UP</h3>
+      <p>Sign up to Career Guide.</p></br>
+      <form method="POST" action="{% url 'register' %}">
+          {% csrf_token %}
+        <label class="email-label" for="regEmail">Email </label> 
+        <label class="user-label" for="regUsername">Username </label>
+        <label class="pass-label" for="regPassword">Password </label></br>
+        <input type="email" id="regEmail" name="email" required placeholder="Enter your email" />
+        <input type="text" id="regUsername" name="username" required placeholder="Enter your username" />
+        <input type="password" id="regPassword" name="password" required placeholder="Enter your password" />
+        <button type="submit">Sign up</button></br></br>
+        <span class="toggle-link" onclick="toggleForms('login')">Already have an account? Sign In</span>
+      </form>
+    </div>
+  </div>
+
+
+  <script>
+    const popup = document.getElementById("authPopup");
+    const loginForm = document.getElementById("loginForm");
+    const registerForm = document.getElementById("registerForm");
+
+    function openPopup() {
+      popup.classList.add("active");
+    }
+
+    function closePopup() {
+      popup.classList.remove("active");
+    }
+
+    function toggleForms(type) {
+      if (type === "register") {
+        loginForm.classList.add("slide-out-left");
+        setTimeout(() => {
+          loginForm.style.display = "none";
+          registerForm.style.display = "block";
+          registerForm.classList.add("slide-in");
+        }, 500);
+      } else {
+        registerForm.classList.add("slide-out-right");
+        setTimeout(() => {
+          registerForm.style.display = "none";
+          loginForm.style.display = "block";
+          loginForm.classList.add("slide-in");
+        }, 500);
+      }
+
+      // Reset animations
+      setTimeout(() => {
+        loginForm.classList.remove("slide-out-left","slide-in");
+        registerForm.classList.remove("slide-out-right","slide-in");
+      }, 600);
+    }
+  </script>
+
+  <!-- Animation Script -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.about-section, .about-section2').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+  <!--review-->
+  
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reviews = document.querySelectorAll(".review");
+  const dotsContainer = document.getElementById("dots");
+  const reviewBox = document.querySelector(".reviews-slider");
+  let index = 0;
+
+  // ✅ Create dots
+  reviews.forEach((_, i) => {
+    const dot = document.createElement("span");
+    if (i === 0) dot.classList.add("active");
+    dot.addEventListener("click", () => showReview(i));
+    dotsContainer.appendChild(dot);
+  });
+  const dots = dotsContainer.querySelectorAll("span");
+
+  function showReview(i) {
+    reviews[index].classList.remove("active");
+    dots[index].classList.remove("active");
+    index = i;
+    reviews[index].classList.add("active");
+    dots[index].classList.add("active");
+  }
+
+  // ✅ Auto Slide
+  setInterval(() => {
+    showReview((index + 1) % reviews.length);
+  }, 4000);
+
+  // ✅ Show all reviews without breaking slider
+  document.getElementById("openingsBtn").addEventListener("click", () => {
+    dotsContainer.style.display = "none"; // hide dots
+    reviewBox.classList.add("show-all");  // CSS will make all visible
+    reviews.forEach(r => r.classList.add("active"));
+  });
+});
+</script>
+<script>
+  AOS.init({ duration: 800, once: false, mirror: true, easing: 'ease-in-out' });
+</script>
+
+<script>
+  const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+  // Show button after hero section (e.g., 400px down)
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      scrollUpBtn.classList.remove("hidden");
+    } else {
+      scrollUpBtn.classList.add("hidden");
+    }
+  });
+
+  // Smooth scroll to top
+  scrollUpBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>

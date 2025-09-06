@@ -1,0 +1,124 @@
+/* Base */
+.body-feature {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #212529;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  color: #6c757d;
+}
+
+.bg-light-custom {
+  background-color: #f1f3f6;
+}
+
+/* Cards */
+.card-custom {
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card-custom:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+
+
+/* Timeline container */
+#how-it-works .timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+/* Each step */
+#how-it-works .timeline-step {
+  position: relative;
+  padding-left: 60px;
+  padding-bottom: 50px;
+  border-left: 3px solid #a855f7; /* Lavender vertical line */
+}
+
+/* Remove line after last */
+#how-it-works .timeline-step:last-child {
+  border-left: 3px solid transparent;
+  padding-bottom: 0;
+}
+
+/* Circle numbers */
+#how-it-works .timeline-icon {
+  position: absolute;
+  left: -22px;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #a855f7; /* Lavender */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(168, 85, 247, 0.4);
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+
+/* On hover / after animation */
+#how-it-works .timeline-step:hover .timeline-icon,
+#how-it-works .timeline-step.aos-animate .timeline-icon {
+  background:#a855f7; /* Blue */
+  transform: scale(1.1);
+}
+
+/* Titles */
+#how-it-works h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Text */
+#how-it-works p {
+  color: #6b7280; /* Tailwind gray-500 */
+  line-height: 1.6;
+}
+
+#btn-start:hover {
+    transform: scale(1.05) translateY(-2px);
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+  }
+
+  .btn-subscribe:hover {
+       transform: scale(1.05) translateY(-2px);
+      box-shadow: 0 8px 25px rgba(181, 181, 181, 0.15);
+    }
+
+
+  
