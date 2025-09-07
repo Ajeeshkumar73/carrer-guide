@@ -12,6 +12,9 @@ def index(request):
 def user_page(request):
     return render(request, "user_page.html")
 
+def predict_page(request):
+    return render(request, "predict_page.html")
+
 
 def register_view(request):
     if request.method == "POST":

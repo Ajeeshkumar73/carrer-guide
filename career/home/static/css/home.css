@@ -397,40 +397,6 @@ body {
     }
 
     
-
-     .close-btn {
-    position: absolute;
-    right: 20rem;
-    top: 13rem;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 23px;
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
-    user-select: none;
-  }
-
-  form > input[type="email"],
-  form > input[type="text"],
-  form > input[type="password"] {
-    padding: 0.4rem;
-    border-radius: 5px;
-    border: 1px solid white;
-    background: transparent;
-    color: white;
-    margin-right: 0.5rem;
-  }
-  form > button {
-    padding: 0.4rem 1rem;
-    background: white;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
   .email-label {
     display:inline;
     margin-top: 1rem;
@@ -460,9 +426,11 @@ body {
     padding-left: 170px;
     height: 270px;
     margin-bottom: -80px;
+    
   }
   .auth-popup.active {
     bottom: 10%;
+   
   }
 
   /* Slide animation between forms */

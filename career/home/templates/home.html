@@ -34,7 +34,7 @@
     background-color: #2563eb; /* Tailwind blue-600 */
   }
 
-  * Custom social icons for accessibility and consistent style */
+  /* Custom social icons for accessibility and consistent style */
     .social-icon svg {
       width: 24px;
       height: 24px;
@@ -48,6 +48,76 @@
       outline: 2px solid #2563eb; /* Tailwind blue-600 */
       outline-offset: 2px;
     }
+
+     @keyframes slide-in {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  .animate-slide-in {
+    animation: slide-in 0.4s ease-out;
+  }
+
+      .hidden { display: none !important; }
+
+    /* Styling for auth section */
+    #authSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      background: #000000ff;
+      min-height: 15vh;
+      overflow:hidden;
+    }
+
+    .auth-popup {
+      background: black;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      width: 100%;
+      position: relative;
+      padding-left:100px;
+    }
+
+    .auth-popup input {
+    
+      padding: 0.4rem;
+      border: 1px solid white;
+      border-radius: 5px;
+      background: transparent;
+      color: white;
+    margin-right: 0.5rem;
+    }
+
+      
+    form > button {
+    padding: 0.4rem 1rem;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+    .close-btn {
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 150px;
+      color: white;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size:20px;
+  }
+
 </style>
 </head>
 <body>
@@ -72,19 +142,76 @@
       </nav>
     </div>
 
+    {% if messages %}
+  <div class="fixed top-5 right-5 z-50 space-y-2">
+    {% for message in messages %}
+      <div class="flex items-center justify-between px-4 py-3 rounded-lg shadow-lg text-white animate-slide-in
+                  {% if message.tags == 'success' %} bg-green-600
+                  {% elif message.tags == 'error' %} bg-red-600
+                  {% else %} bg-gray-800 {% endif %}">
+        <span>{{ message }}</span>
+        <button class="ml-3 text-xl leading-none focus:outline-none close-btn">&times;</button>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
     <!-- Hero Text -->
     <div class="relative flex flex-col justify-center items-center text-center flex-1 px-6 z-10">
+      
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-light tracking-wide leading-tight mb-6">
         THE FUTURE OF<br />CAREER GUIDANCE IS HERE
       </h1>
       <p class="text-gray-200 text-lg sm:text-xl max-w-2xl mx-auto mb-12 font-normal">
         Discover personalized career pathways, expert mentorship, and the skills you need to succeed in your dream profession.
       </p>
-     <a href="{% url 'user_page' %}">
-      <button class="btn-subscribe px-8 py-3 text-lg" style="border-radius:5px;" onclick="window.location.href='userpage.html'" >Find Your Path</button>
+     <a>
+      <button class="btn-subscribe px-8 py-3 text-lg" style="border-radius:5px;" onclick="openPopup()" >Find Your Path</button>
      </a>
     </div>
   </section>
+
+    <!-- Auth Section -->
+  <section id="authSection" class="hidden">
+    
+    <!--login-->
+  <div class="auth-popup" id="authPopup">
+    <button class="close-btn" type="button" onclick="closePopup()" aria-label="Close">X</button>
+    
+    <div id="loginForm" class="slide-in">
+      <h3>SIGN IN</h3>
+      <p>Sign in to Career Guide.</p></br>
+      <form method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+        <label class="email-label" for="email">Email </label> 
+        <label class="user-label" for="password">Password </label></br>
+
+        <input type="email" id="email" name="email" required placeholder="Enter your email" />
+        <input type="password" id="password" name="password" required placeholder="Enter your password" />
+        <button type="submit">Sign in</button></br></br>
+        <span class="toggle-link" onclick="toggleForms('register')">Don't have an account? Register</span>
+      </form>
+    </div>
+
+    <div id="registerForm" style="display:none;">
+      <h3>SIGN UP</h3>
+      <p>Sign up to Career Guide.</p></br>
+      <form method="POST" action="{% url 'register' %}">
+          {% csrf_token %}
+        <label class="email-label" for="regEmail">Email </label> 
+        <label class="user-label" for="regUsername">Username </label>
+        <label class="pass-label" for="regPassword">Password </label></br>
+        <input type="email" id="regEmail" name="email" required placeholder="Enter your email" />
+        <input type="text" id="regUsername" name="username" required placeholder="Enter your username" />
+        <input type="password" id="regPassword" name="password" required placeholder="Enter your password" />
+        <button type="submit">Sign up</button></br></br>
+        <span class="toggle-link" onclick="toggleForms('login')">Already have an account? Sign In</span>
+      </form>
+    </div>
+  </div>
+
+  </section>
+
 
   <button id="scrollUpBtn" 
   class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-black text-white flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"
@@ -254,7 +381,7 @@
 </section>
 
 <!-- Main Banner Section -->
-<section class="main-banner">
+<section class="main-banner" id="community">
   <div class="content-section">
     <div class="image-container">
       <img src="{% static 'images/community.avif' %}" alt="Career Guide Community" />
@@ -302,9 +429,9 @@
     </section>
   </div>
 
-  <div style="background-color:white;"> 
+  <div style="background-color:white;" id="review"> 
   <!--review-->
-   <div class="reviewmain" id="review" data-aos="fade-up" style="font-size:20px">
+   <div class="reviewmain"  data-aos="fade-up" style="font-size:20px">
   <div class="left" style=" max-width: 450px;">
     <div class="subheading" style="font-size:20px;">Real People, Real Impact</div>
     <p>Don't just take our word for it.</p>
@@ -504,82 +631,34 @@
   </footer>
   
   
-
-
-  <!--login-->
-  <div class="auth-popup" id="authPopup">
-    <button class="close-btn" type="button" onclick="closePopup()" aria-label="Close">X</button>
-    
-    <div id="loginForm" class="slide-in">
-      <h3>SIGN IN</h3>
-      <p>Sign in to Career Guide.</p></br>
-      <form method="POST" action="{% url 'login' %}">
-        {% csrf_token %}
-        <label class="email-label" for="email">Email </label> 
-        <label class="user-label" for="password">Password </label></br>
-
-        <input type="email" id="email" name="email" required placeholder="Enter your email" />
-        <input type="password" id="password" name="password" required placeholder="Enter your password" />
-        <button type="submit">Sign in</button></br></br>
-        <span class="toggle-link" onclick="toggleForms('register')">Don't have an account? Register</span>
-      </form>
-    </div>
-
-    <div id="registerForm" style="display:none;">
-      <h3>SIGN UP</h3>
-      <p>Sign up to Career Guide.</p></br>
-      <form method="POST" action="{% url 'register' %}">
-          {% csrf_token %}
-        <label class="email-label" for="regEmail">Email </label> 
-        <label class="user-label" for="regUsername">Username </label>
-        <label class="pass-label" for="regPassword">Password </label></br>
-        <input type="email" id="regEmail" name="email" required placeholder="Enter your email" />
-        <input type="text" id="regUsername" name="username" required placeholder="Enter your username" />
-        <input type="password" id="regPassword" name="password" required placeholder="Enter your password" />
-        <button type="submit">Sign up</button></br></br>
-        <span class="toggle-link" onclick="toggleForms('login')">Already have an account? Sign In</span>
-      </form>
-    </div>
-  </div>
-
-
   <script>
-    const popup = document.getElementById("authPopup");
+    const authSection = document.getElementById("authSection");
     const loginForm = document.getElementById("loginForm");
     const registerForm = document.getElementById("registerForm");
 
     function openPopup() {
-      popup.classList.add("active");
+      authSection.classList.remove("hidden");
+      authSection.scrollIntoView({ behavior: "smooth" }); // smooth scroll
     }
 
     function closePopup() {
-      popup.classList.remove("active");
+      authSection.classList.add("hidden");
     }
 
-    function toggleForms(type) {
-      if (type === "register") {
-        loginForm.classList.add("slide-out-left");
-        setTimeout(() => {
-          loginForm.style.display = "none";
-          registerForm.style.display = "block";
-          registerForm.classList.add("slide-in");
-        }, 500);
+    function toggleForms(form) {
+      if (form === "register") {
+        loginForm.style.display = "none";
+        registerForm.style.display = "block";
       } else {
-        registerForm.classList.add("slide-out-right");
-        setTimeout(() => {
-          registerForm.style.display = "none";
-          loginForm.style.display = "block";
-          loginForm.classList.add("slide-in");
-        }, 500);
+        loginForm.style.display = "block";
+        registerForm.style.display = "none";
       }
-
-      // Reset animations
-      setTimeout(() => {
-        loginForm.classList.remove("slide-out-left","slide-in");
-        registerForm.classList.remove("slide-out-right","slide-in");
-      }, 600);
     }
   </script>
+
+
+
+  
 
   <!-- Animation Script -->
   <script>
@@ -657,6 +736,22 @@ document.addEventListener("DOMContentLoaded", () => {
   scrollUpBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+</script>
+
+ <script>
+  document.querySelectorAll(".close-btn").forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.target.closest("div").remove();
+    });
+  });
+
+  // Auto remove after 5 seconds
+  setTimeout(() => {
+    document.querySelectorAll(".fixed .flex").forEach(el => {
+      el.style.opacity = "0";
+      setTimeout(() => el.remove(), 500); // smooth fade out
+    });
+  }, 5000);
 </script>
 </body>
 </html>

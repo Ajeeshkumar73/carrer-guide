@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="fixed top-0 left-0 w-full flex justify-between items-center px-12 py-6 z-10 bg-white shadow-md">
+      <div class="text-lg font-semibold tracking-widest">CAREERGUIDE</div>
+      <nav class="flex items-center space-x-8 text-sm font-medium" style="margin-right:170px;">
+        <a href="{% url 'home' %}" class="hover:text-blue-600">Home</a>
+        <a href="{% url 'community' %}" class="hover:text-blue-600">Community</a>
+        <a href="{% url 'userpage' %}" class="hover:text-blue-600">
+            Hi, {{ user.username }}
+        </a>
+        <a href="{% url 'logout' %}" class="hover:text-blue-600">Logout</a>
+      </nav>
+    </div>
+
+    <div class="container mx-auto px-4 py-20 text-center">
+        <h1 class="text-4xl font-bold mb-4">Community Page</h1>
+        <p class="text-lg text-gray-700">This is a place to connect with others.</p>
+        <div class="mt-8">
+            <p>You can only see this page because you are logged in as {{ user.username }}.</p>
+        </div>
+    </div>
+
+</body>
+</html>
