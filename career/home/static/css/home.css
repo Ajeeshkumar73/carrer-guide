@@ -78,7 +78,6 @@ body {
     .about-image {
       max-width: 500px;
       width: 100%;
-      filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
     }
 
     /* About Section 2 (AI-Powered Guidance) */

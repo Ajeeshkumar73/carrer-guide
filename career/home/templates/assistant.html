@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareerGuide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: '#10a37f',
+            "background-light": "#ffffff",
+            "background-dark": "#343541",
+            "sidebar-light": "#f7f7f8",
+            "sidebar-dark": "#202123",
+            "text-light": "#202123",
+            "text-dark": "#ececf1",
+            "border-light": "#e5e5e5",
+            "border-dark": "#4d4d4f",
+            "input-light": "#ffffff",
+            "input-dark": "#40414f",
+          },
+          fontFamily: { sans: ['Roboto', 'sans-serif'] },
+          borderRadius: { DEFAULT: '0.5rem' },
+        },
+      },
+    };
+  </script>
+  <style>
+    .material-icons { font-size: 24px; }
+    /* simple custom bubble max width and responsive layout adjustments */
+    .chat-wrapper { width:100%; max-width:900px; margin:0 auto; }
+  .chat-row { display:flex; margin:6px 0; }
+  .chat-row.ai { justify-content:flex-start; }    /* left */
+  .chat-row.user { justify-content:flex-end; }    /* right */
+  .bubble {
+    padding:10px 14px;
+    border-radius:12px;
+    max-width:80%;
+    word-wrap:break-word;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04) inset;
+  }
+  .bubble.ai {
+    background:#2563eb; /* blue */
+    color:#fff;
+    margin-left: 6px;   /* small gap from left edge */
+  }
+  .bubble.user {
+    background:#2563eb; /* green */
+    color:#fff;
+    margin-right: 6px;  /* small gap from right edge */
+  }
+
+  /* When screen is narrow, reduce max width */
+  @media (max-width:640px) {
+    .bubble { max-width:92%; padding:10px; }
+    .chat-wrapper { padding: 0 12px; }
+  }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside id="sidebar"
+           class="w-64 bg-sidebar-light dark:bg-sidebar-dark flex flex-col text-text-light dark:text-text-dark
+                  transform -translate-x-full md:translate-x-0 transition-transform duration-300
+                  fixed md:static inset-y-0 left-0 z-40 md:z-auto">
+      <div class="p-4 border-b border-border-light dark:border-border-dark flex items-center justify-between">
+        <h1 class="text-xl font-bold">CareerGuide</h1>
+        <!-- small-screen close button -->
+        <button id="sidebar-close-btn" class="p-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 md:hidden">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="flex-grow p-4 space-y-2">
+        <a  id="new-chat-btn" class="flex items-center justify-between p-3 rounded-md bg-primary text-white" href="#">
+          <span>New Chat</span>
+          <span class="material-icons">edit</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Overlay for small screens when sidebar is open -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 z-30 md:hidden"></div>
+
+    <!-- Main area -->
+    <main class="flex-1 flex flex-col">
+      <header class="flex items-center justify-end p-4 border-b border-border-light dark:border-border-dark" style="height: 61px;">
+        <div class="flex items-center space-x-4">
+          <!-- Header menu button (three-bar) -->
+          <button id="header-menu-btn" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 md:hidden">
+            <span class="material-icons">menu</span>
+          </button>
+
+          <button id="dark-toggle" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" title="Toggle dark mode">
+            <span id="dark-icon" class="material-icons">dark_mode</span>
+          </button>
+
+          <button class="text-text-light dark:text-text-dark hover:underline">Login</button>
+          <button class="bg-primary text-white px-4 py-2 rounded-md font-semibold">SIGN IN</button>
+        </div>
+      </header>
+
+      <header class="p-6  bg-input-light dark:bg-input-dark">
+        <div class="flex justify-between items-center text-sm pt-2">
+          <div class="text-gray-600">
+            <span id="login-status" class="font-semibold text-gray-800">Offline Mode</span>
+            <span id="service-status" class="text-xs text-gray-400 ml-2"></span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <div class="flex items-center space-x-2 bg-gray-100 p-1 rounded-lg text-sm shadow-inner">
+              <button id="lang-en" onclick="setLanguage('en')" class="px-3 py-1 rounded-md bg-primary text-white">EN</button>
+              <button id="lang-ml" onclick="setLanguage('ml')" class="px-3 py-1 rounded-md hover:bg-gray-200 text-gray-700">ML</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Chat area -->
+      <main id="chat-history" class="flex-grow overflow-y-auto p-6 space-y-4 bg-input-light dark:bg-input-dark">
+        <!-- initial bubble inside centered box (will be replaced by renderChatHistory contents) -->
+        <div class="flex justify-center">
+          <div class="bg-blue-600 text-white p-4 rounded-xl max-w-2xl">
+            Hello! I'm your AI Career Assistant. How can I assist you with your career journey today?
+          </div>
+        </div>
+      </main>
+
+      <footer class="p-6  border-gray-200 flex gap-4 items-end bg-input-light dark:bg-input-dark">
+        <input type="text" id="user-input" placeholder="Type your career question..."
+               class="flex-grow p-4 rounded-xl bg-input-light dark:bg-input-dark text-white border focus:border-blue-500 focus:outline-none shadow-inner"
+               onkeydown="if(event.key==='Enter') sendMessage()">
+
+       <button id="mic-button" onclick="toggleVoiceInput()" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 text-text-light dark:text-text-dark" title="Voice" style="display:inline-flex">
+        <svg id="mic-icon"  viewBox="0 0 24 24"><path d="M12 14a3 3 0 003-3V6a3 3 0 10-6 0v5a3 3 0 003 3z"></path></svg><span class="material-icons">mic</span>
+      </button>
+
+        <button id="send-button" onclick="sendMessage()" class="w-10 h-10 rounded-full bg-[#10a37f] flex items-center justify-center hover:scale-105 transition shadow">
+          <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+        </button>
+      </footer>
+
+      <div id="status-indicator" class="text-center text-sm p-2 text-gray-500 bg-input-light dark:bg-input-dark hidden">
+        <div id="loading-spinner" class="inline-block animate-spin w-4 h-4 border-b-2 border-blue-400 mr-2 hidden"></div>
+        <span id="status-message"></span>
+      </div>
+    </main>
+  </div>
+
+<script>
+let currentLanguage = 'en'; // 'en' or 'ml'
+let chatHistory = [];
+let activeAudio = null;
+let recognition = null;
+let isRecording = false;
+let isProcessing = false;
+
+const apiKey = "AIzaSyCsHff1rzdDIGmB4dYyxxqEqL_8Sg4VOyU";
+const GEMINI_TEXT_MODEL = "gemini-2.5-flash-preview-05-20";
+const GEMINI_TTS_MODEL = "gemini-2.5-flash-preview-tts";
+
+const chatHistoryEl = document.getElementById('chat-history');
+const userInputEl = document.getElementById('user-input');
+const micButton = document.getElementById('mic-button');
+const micIcon = document.getElementById('mic-icon');
+const statusIndicator = document.getElementById('status-indicator');
+const statusMessage = document.getElementById('status-message');
+const sendButton = document.getElementById('send-button');
+const serviceStatusEl = document.getElementById('service-status');
+
+// ======= Helpers =======
+function setStatus(msg, showSpinner = false) {
+  statusIndicator.classList.remove('hidden');
+  statusMessage.textContent = msg;
+  document.getElementById('loading-spinner').classList.toggle('hidden', !showSpinner);
+}
+function hideStatus() { statusIndicator.classList.add('hidden'); }
+function setServiceStatus(text, isError=false) { serviceStatusEl.textContent = text; serviceStatusEl.style.color = isError ? '#b91c1c' : '#374151'; }
+
+async function makeApiCallWithRetry(apiUrl, payload, retries = 3, baseDelay = 800) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      const resp = await fetch(apiUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      if (!resp.ok) {
+        const body = await resp.text().catch(()=>"(no body)");
+        throw new Error(`API error ${resp.status}: ${body}`);
+      }
+      return await resp.json();
+    } catch (err) {
+      console.error("API request attempt failed:", err);
+      if (i === retries - 1) throw err;
+      await new Promise(r => setTimeout(r, baseDelay * Math.pow(2, i)));
+    }
+  }
+}
+
+// ======= Text Generation =======
+async function generateText(prompt) {
+  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_TEXT_MODEL}:generateContent?key=${apiKey}`;
+  const systemPrompt = "You are a friendly, bilingual (English and Malayalam) career guidance expert. Provide concise, actionable replies in the language the user uses.";
+  const payload = {
+    contents: [{ parts: [{ text: prompt }] }],
+    systemInstruction: { parts: [{ text: systemPrompt }] },
+  };
+  try {
+    const result = await makeApiCallWithRetry(apiUrl, payload);
+    const out = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+    if (!out) throw new Error("No text candidate returned.");
+    setServiceStatus("Service: OK");
+    return out;
+  } catch (err) {
+    console.error("Text generation failed:", err);
+    setServiceStatus("Service: Unavailable", true);
+    throw err;
+  }
+}
+
+// ======= Audio Helpers =======
+function base64ToUint8Array(base64) {
+  const binary = atob(base64.replace(/\s/g, ''));
+  const bytes = new Uint8Array(binary.length);
+  for (let i=0; i<binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return bytes;
+}
+
+function pcm16ToWavBlob(pcm16Array, sampleRate = 24000) {
+  const buffer = new ArrayBuffer(44 + pcm16Array.length * 2);
+  const view = new DataView(buffer);
+  function writeString(view, offset, str) { for (let i=0;i<str.length;i++) view.setUint8(offset+i,str.charCodeAt(i)); }
+  writeString(view,0,'RIFF'); view.setUint32(4,36+pcm16Array.length*2,true);
+  writeString(view,8,'WAVE'); writeString(view,12,'fmt '); view.setUint32(16,16,true);
+  view.setUint16(20,1,true); view.setUint16(22,1,true);
+  view.setUint32(24,sampleRate,true); view.setUint32(28,sampleRate*2,true);
+  view.setUint16(32,2,true); view.setUint16(34,16,true);
+  writeString(view,36,'data'); view.setUint32(40,pcm16Array.length*2,true);
+  let offset=44;
+  for(let i=0;i<pcm16Array.length;i++,offset+=2) view.setInt16(offset,pcm16Array[i],true);
+  return new Blob([view],{type:'audio/wav'});
+}
+
+function getTtsVoiceName(lang) { return lang==='ml'?"Rasalgethi":"Kore"; }
+
+async function generateAudioOrFallback(text) {
+  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_TTS_MODEL}:generateContent?key=${apiKey}`;
+  const payload = {
+    contents:[{parts:[{text}]}],
+    generationConfig:{
+      responseModalities:["AUDIO"],
+      speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:getTtsVoiceName(currentLanguage)}}}
+    },
+    model:GEMINI_TTS_MODEL
+  };
+  try {
+    const result = await makeApiCallWithRetry(apiUrl,payload);
+    const part = result?.candidates?.[0]?.content?.parts?.[0];
+    const audioBase64 = part?.inlineData?.audio?.content || part?.inlineData?.data;
+    if(!audioBase64) throw new Error("No audio data returned");
+    const bytes = base64ToUint8Array(audioBase64);
+    const mimeType = part?.inlineData?.mimeType || 'audio/mpeg';
+    if(mimeType.toLowerCase().includes('l16')) {
+      const int16 = new Int16Array(bytes.buffer);
+      const wavBlob = pcm16ToWavBlob(int16);
+      return URL.createObjectURL(wavBlob);
+    }
+    return URL.createObjectURL(new Blob([bytes.buffer], {type:mimeType}));
+  } catch(err) {
+    console.warn("TTS generation failed:", err);
+    return null;
+  }
+}
+
+function speakWithWebSpeech(text){
+  if(!('speechSynthesis' in window)) return;
+  const synth = window.speechSynthesis;
+  const speak = ()=>{
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = currentLanguage==='ml'?'ml-IN':'en-US';
+    synth.speak(utter);
+    setStatus(currentLanguage==='ml'?'സംസാരിക്കുന്നു...':'Speaking...');
+    utter.onend = ()=>hideStatus();
+  };
+  if(synth.getVoices().length===0) synth.onvoiceschanged=speak;
+  else speak();
+}
+
+// ======= Send Message =======
+async function sendMessage() {
+  if(isProcessing) return;
+  const prompt = userInputEl.value.trim();
+  if(!prompt) return;
+
+  if(activeAudio){ activeAudio.pause(); activeAudio=null; }
+  if('speechSynthesis' in window) window.speechSynthesis.cancel();
+
+  isProcessing=true;
+  sendButton.disabled=micButton.disabled=true;
+  userInputEl.value='';
+
+  chatHistory.push({text:prompt,role:'user'});
+  renderChatHistory(chatHistory);
+  setStatus(currentLanguage==='ml'?'ഉത്തരം തയ്യാറാക്കുന്നു...':'Generating response...',true);
+
+  try{
+    const aiText = await generateText(prompt);
+    chatHistory.push({text:aiText,role:'ai'});
+    renderChatHistory(chatHistory);
+
+    if(currentLanguage==='ml'){
+      const audioUrl = await generateAudioOrFallback(aiText);
+      if(audioUrl){
+        const audio = new Audio(audioUrl);
+        activeAudio=audio;
+        audio.onplaying = ()=>setStatus('സംസാരിക്കുന്നു...',false);
+        audio.onended = ()=>{ activeAudio=null; hideStatus(); };
+        audio.onerror = ()=>{
+          activeAudio=null; hideStatus();
+          speakWithWebSpeech(aiText);
+        };
+        audio.play().catch(()=>speakWithWebSpeech(aiText));
+      } else speakWithWebSpeech(aiText);
+    } else speakWithWebSpeech(aiText);
+
+  }catch(err){
+    console.error("Chat flow error:",err);
+    const msg = currentLanguage==='ml'?"സഹായിക്കാൻ കഴിഞ്ഞില്ല. നെറ്റ്‌വർക്ക് പരിശോധിക്കുക അല്ലെങ്കിൽ പിന്നീട് വീണ്ടും ശ്രമിക്കുക."
+                                       :"Could not generate a response. Please check your network or try again later.";
+    chatHistory.push({text:msg,role:'ai'});
+    renderChatHistory(chatHistory);
+    alert(msg);
+  } finally {
+    isProcessing=false;
+    sendButton.disabled=micButton.disabled=false;
+    if(!activeAudio) hideStatus();
+  }
+}
+
+// ======= Speech Recognition =======
+function createSpeechRecognition(){
+  if(!('webkitSpeechRecognition' in window||'SpeechRecognition' in window)){
+    micButton.disabled=true; micButton.title="Voice input not supported in this browser.";
+    return null;
+  }
+  const SR = window.SpeechRecognition||window.webkitSpeechRecognition;
+  const rec = new SR();
+  rec.continuous=false; rec.interimResults=false;
+  rec.lang=currentLanguage==='ml'?'ml-IN':'en-US';
+  rec.onstart = ()=>{
+    isRecording=true;
+    micIcon.style.fill='#fff';
+    micButton.style.background='#dc2626';
+    setStatus(currentLanguage==='ml'?'കേൾക്കുന്നു...':'Listening...');
+  };
+  rec.onresult = ev=>{
+    userInputEl.value=ev.results[0][0].transcript;
+    setStatus(currentLanguage==='ml'?'ശബ്ദം തിരിച്ചറിഞ്ഞു...':'Speech recognized...');
+    setTimeout(sendMessage,500);
+  };
+  rec.onerror = e=>{
+    console.error("Speech recognition error:", e);
+    alert("Voice Input Error: Speech recognition failed or microphone permission denied.");
+    resetVoiceInputUI();
+  };
+  rec.onend = resetVoiceInputUI;
+  return rec;
+}
+
+function resetVoiceInputUI(){
+  isRecording=false;
+  micButton.style.background='#16a34a';
+  hideStatus();
+}
+
+function toggleVoiceInput(){
+  if(activeAudio){ activeAudio.pause(); activeAudio=null; }
+  if('speechSynthesis' in window) window.speechSynthesis.cancel();
+
+  if(isRecording && recognition) recognition.stop();
+  else { if(!recognition) recognition=createSpeechRecognition(); recognition?.start(); }
+}
+
+// ======= Render Chat =======
+// UPDATED: render messages inside centered boxes. AI = blue bg, white text. User = green right-aligned bubble.
+function renderChatHistory(history){
+  // clear
+  chatHistoryEl.innerHTML = '';
+
+  // wrapper centers the column but bubbles hug the left/right edges inside it
+  const wrapper = document.createElement('div');
+  wrapper.className = 'chat-wrapper';
+
+  history.forEach(msg => {
+    const row = document.createElement('div');
+    row.className = 'chat-row ' + (msg.role === 'user' ? 'user' : 'ai');
+
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble ' + (msg.role === 'user' ? 'user' : 'ai');
+    bubble.textContent = msg.text;
+
+    // For ai messages we want them flush-left with small left margin.
+    // For user messages we want them flush-right with small right margin.
+    row.appendChild(bubble);
+    wrapper.appendChild(row);
+  });
+
+  chatHistoryEl.appendChild(wrapper);
+
+  // keep a small spacer so input bar doesn't overlap last message
+  const spacer = document.createElement('div');
+  spacer.style.height = '20px';
+  chatHistoryEl.appendChild(spacer);
+
+  // scroll to bottom
+  chatHistoryEl.scrollTop = chatHistoryEl.scrollHeight;
+}
+// ======= Language Switch =======
+function setLanguage(lang){
+  currentLanguage=lang;
+  document.getElementById('lang-en').classList.toggle('bg-primary',lang==='en');
+  document.getElementById('lang-en').classList.toggle('text-white',lang==='en');
+  document.getElementById('lang-ml').classList.toggle('bg-primary',lang==='ml');
+  document.getElementById('lang-ml').classList.toggle('text-white',lang==='ml');
+  userInputEl.placeholder = lang==='en'?"Type your career question...":"നിങ്ങളുടെ കരിയർ ചോദ്യം ടൈപ്പ് ചെയ്യുക...";
+  if(isRecording) toggleVoiceInput();
+  recognition=createSpeechRecognition();
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  // initial demo message inside the new boxed layout
+  chatHistory = [{text: "Hello! I'm your AI Career Guide. How can I assist you with your professional journey today?", role: 'ai'}];
+  renderChatHistory(chatHistory);
+  setLanguage('en');
+  recognition=createSpeechRecognition();
+});
+</script>
+
+<script>
+  (function () {
+    const sidebar = document.getElementById('sidebar');
+    const headerMenuBtn = document.getElementById('header-menu-btn');
+    const sidebarCloseBtn = document.getElementById('sidebar-close-btn');
+    const overlay = document.getElementById('sidebar-overlay');
+
+    // Toggle sidebar (for small screens)
+    function openSidebar() {
+      sidebar.classList.remove('-translate-x-full');
+      sidebar.classList.add('translate-x-0');
+      overlay.classList.remove('opacity-0', 'pointer-events-none');
+      overlay.classList.add('opacity-100');
+    }
+    function closeSidebar() {
+      sidebar.classList.remove('translate-x-0');
+      sidebar.classList.add('-translate-x-full');
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      overlay.classList.remove('opacity-100');
+    }
+    function toggleSidebar() {
+      if (sidebar.classList.contains('-translate-x-full')) openSidebar();
+      else closeSidebar();
+    }
+
+    headerMenuBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleSidebar();
+    });
+    sidebarCloseBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeSidebar();
+    });
+    overlay?.addEventListener('click', () => closeSidebar());
+
+    // Close sidebar when pressing Escape
+    document.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Escape') closeSidebar();
+    });
+
+    // Ensure sidebar state on resize:
+    const mql = window.matchMedia('(min-width: 768px)'); // md breakpoint
+    function handleResize() {
+      if (mql.matches) {
+        // Desktop: ensure visible and remove transforms applied for mobile
+        sidebar.classList.remove('-translate-x-full');
+        sidebar.classList.remove('translate-x-0');
+        overlay.classList.add('opacity-0', 'pointer-events-none');
+      } else {
+        // Mobile: hide by default (if not previously opened)
+        if (!sidebar.classList.contains('translate-x-0')) {
+          sidebar.classList.add('-translate-x-full');
+        }
+      }
+    }
+    mql.addEventListener('change', handleResize);
+    window.addEventListener('load', handleResize);
+    window.addEventListener('resize', handleResize);
+
+    // Dark mode toggle (persist to localStorage)
+    const darkToggle = document.getElementById('dark-toggle');
+    const darkIcon = document.getElementById('dark-icon');
+    const root = document.documentElement;
+    const LS_KEY = 'careerguide_dark';
+
+    function applyDark(dark) {
+      if (dark) {
+        root.classList.add('dark');
+        darkIcon.textContent = 'light_mode';
+      } else {
+        root.classList.remove('dark');
+        darkIcon.textContent = 'dark_mode';
+      }
+    }
+
+    // Init from localStorage or system preference
+    const stored = localStorage.getItem(LS_KEY);
+    if (stored === null) {
+      // follow system preference
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      applyDark(prefersDark);
+      localStorage.setItem(LS_KEY, prefersDark ? '1' : '0');
+    } else {
+      applyDark(stored === '1');
+    }
+
+    darkToggle.addEventListener('click', () => {
+      const now = root.classList.contains('dark');
+      applyDark(!now);
+      localStorage.setItem(LS_KEY, !now ? '1' : '0');
+    });
+
+    // Optional: close sidebar when navigating links on mobile:
+    document.querySelectorAll('#sidebar a').forEach(a => {
+      a.addEventListener('click', () => {
+        if (!mql.matches) closeSidebar();
+      });
+    });
+  })();
+
+//new chat
+  document.getElementById('new-chat-btn').addEventListener('click', (e) => {
+  e.preventDefault();  // prevent default link behavior
+  chatHistory = [];     // clear chat history
+  renderChatHistory(chatHistory);  // re-render (empty)
+  
+  // Optional: add initial AI greeting again
+  const initialMsg = currentLanguage === 'ml' 
+    ? "ഹലോ! ഞാൻ നിങ്ങളുടെ കരിയർ ഗൈഡ് ആണു. നിങ്ങൾക്ക് എങ്ങനെ സഹായിക്കാമെന്ന് പറയൂ?" 
+    : "Hello! I'm your AI Career Guide. How can I assist you with your professional journey today?";
+    
+  chatHistory.push({text: initialMsg, role: 'ai'});
+  renderChatHistory(chatHistory);
+});
+
+</script>
+</body>
+</html>
