@@ -10,5 +10,7 @@ urlpatterns = [
     path("submit-review/", views.submit_review, name="submit_review"),
     path("user_page/", views.user_page, name="user_page"),
     path("predict/", views.predict_page, name="predict_page"),
+    path("assistant/", views.assistant, name="assistant"),
+
     
 ]

@@ -133,10 +133,9 @@
     <div class="relative w-full flex justify-between items-center px-12 py-6 z-10">
       <div class="text-lg font-semibold tracking-widest">CAREERGUIDE</div>
       <nav class="flex items-center space-x-8 text-sm font-medium" style="margin-right: 70px;">
+        <a href="#community" class="hover:text-blue-600">Find Career</a>
     <a href="#how-it-works" class="hover:text-blue-600">How It Works</a>
-    <a href="#community" class="hover:text-blue-600">Community</a>
-    <a href="#review" class="hover:text-blue-600">Reviews</a>
-    <a href="#faqs" class="hover:text-blue-600">FAQs</a>
+    <!--<a href="#review" class="hover:text-blue-600">Reviews</a>-->
     <a href="#about" class="hover:text-blue-600">About</a>
         <!--<button class="btn-subscribe" onclick="openPopup()">Sign in</button>-->
       </nav>
@@ -165,8 +164,8 @@
       <p class="text-gray-200 text-lg sm:text-xl max-w-2xl mx-auto mb-12 font-normal">
         Discover personalized career pathways, expert mentorship, and the skills you need to succeed in your dream profession.
       </p>
-     <a href="{% url 'home' %}">
-      <button class="btn-subscribe px-8 py-3 text-lg" style="border-radius:5px;"  >Find Your Path</button>
+     <a href="{% url 'assistant' %}">
+      <button class="btn-subscribe px-8 py-3 text-lg" style="border-radius:5px;"  >Let's Start</button>
      </a>
     </div>
   </section>
@@ -214,35 +213,68 @@
 
 
   <button id="scrollUpBtn" 
-  class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-black text-white flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"
+  class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-white text-black flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"
   aria-label="Scroll to top">
   <i class="bi bi-arrow-up"></i>
 </button>
 
 
   <!-- About 1 -->
-  <div class="about">
+  <div class="about" id="about">
     <section class="about-section" aria-label="About CareerPath" >
       <div class="about-text">
-        <div class="label">Vision</div>
+        <div class="label">About</div>
         <div class="title">CareerPath—Discover Your Ideal Career Journey</div>
         <div class="description">
-          CareerPath is dedicated to helping individuals discover their ideal career paths. 
-          Our platform offers a comprehensive suite of tools and resources, including personalized 
-          career assessments, detailed career profiles, and expert guidance.
+          Our platform helps students choose the right career path with confidence.
+          It analyzes academic performance, personal interests, and skills to recommend
+          suitable fields like engineering, medicine, design, or management. 
 
-          Whether you're a student exploring options or a professional seeking a career change, 
-          CareerPath provides the insights and support you need to make informed decisions 
-          and achieve your aspirations.
+          Students get personalized career suggestions after key milestones such as +2 or
+          undergraduate studies. They can also connect with communities to share resources,
+          learn from experts, and explore new opportunities.
+
+          With a built-in AI voice assistant, users enjoy hands-free support that guides them
+          through career options, educational needs, job prospects, and skill development paths.
         </div>
       </div>
-      <img src="{% static 'images/career2.jpg' %}" alt="Career Path illustration" class="about-image" loading="lazy"/>
+      <!--<img src="{% static 'images/career2.jpg' %}" alt="Career Path illustration" class="about-image" loading="lazy"/>-->
     </section>
   </div>
 
+  <section class="py-5" id="how-it-works" style="height:600px; background-color:black;">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">Your Journey in 3 Simple Steps</h2>
+        <p class="lead section-subtitle mb-5">Clarity is closer than you think.</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8" data-aos="fade-up" style="margin-left:200px;">
+            <div class="timeline">
+                <div class="timeline-step" data-aos="fade-right">
+                    <div class="timeline-icon">1</div>
+                    <h5>Take the 5-Minute Quiz</h5>
+                    <p class="text-muted">Our interactive assessment quickly understands your core traits, skills, and aspirations. No resumes needed.</p>
+                </div>
+                <div class="timeline-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-icon">2</div>
+                    <h5>AI Does the Heavy Lifting</h5>
+                    <p class="text-muted">Our algorithm cross-references your profile with thousands of career paths and market trends to find your top matches.</p>
+                </div>
+                <div class="timeline-step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-icon">3</div>
+                    <h5>Unlock Your Personal Blueprint</h5>
+                    <p class="text-muted">Receive a detailed report with your best-fit careers, skill development plans, and actionable next steps.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Main Banner Section -->
-<section class="main-banner" id="community">
+<!--<section class="main-banner" id="community">
   <div class="content-section">
     <div class="image-container">
       <img src="{% static 'images/community.avif' %}" alt="Career Guide Community" />
@@ -257,10 +289,10 @@
       <button class="btn" onclick="openPopup()">Explore Community</button>
     </div>
   </div>
-</section>
+</section>-->
 
   <!-- About 2 -->
-  <div class="about2">
+  <!--<div class="about2">
     <section class="about-section2" id="about">
       <div class="about-content">
         <div class="small-heading">About</div>
@@ -288,20 +320,19 @@
         <img src="{% static 'images/career3.webp' %}" alt="Career guidance illustration"/>
       </div>
     </section>
-  </div>
+  </div>-->
 
-  <div style="background-color:white;" id="review"> 
-  <!--review-->
+  <!--<div style="background-color:white;" id="review"> 
    <div class="reviewmain"  data-aos="fade-up" style="font-size:20px">
   <div class="left" style=" max-width: 450px;">
     <div class="subheading" style="font-size:20px;">Real People, Real Impact</div>
     <p>Don't just take our word for it.</p>
-    <!--<button class="button" id="openingsBtn" type="button">
+    <button class="button" id="openingsBtn" type="button">
       Openings
       <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M5 3l5 4-5 4" />
       </svg>
-    </button>-->
+    </button>
   </div>
 
   <div class="right" id="reviewBox">
@@ -329,10 +360,10 @@
     <div class="dots" id="dots"></div>
     </div>
   </div>
-</div>
+</div>-->
 
 <!-- Accordion JS -->
-<script>
+<!--<script>
   document.querySelectorAll(".faq-btn").forEach(button => {
     button.addEventListener("click", () => {
       const targetId = button.getAttribute("data-target");
@@ -346,11 +377,11 @@
       arrow.classList.toggle("rotate-180");
     });
   });
-</script>
+</script>-->
 
 
 <!-- CTA Section -->
-<section class="py-20 bg-black">
+<!--<section class="py-20 bg-black">
   <div class="max-w-5xl mx-auto px-6 text-center text-white" data-aos="zoom-in-up">
     <h2 class="text-4xl font-bold" style="font-weight:500;">Ready to Find Your Calling?</h2>
     <p class="mt-6 text-lg max-w-2xl mx-auto">
@@ -362,7 +393,7 @@
       font-weight: bold; width:185px; height:55px; font-size:15px;">Let's Do This! <i class="bi bi-arrow-right-short"></i></button>
     </a>
   </div>
-</section>
+</section>-->
 
 <!-- Accordion JS -->
 <script>

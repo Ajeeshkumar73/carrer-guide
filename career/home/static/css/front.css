@@ -62,7 +62,7 @@
   position: relative;
   padding-left: 60px;
   padding-bottom: 50px;
-  border-left: 3px solid #a855f7; /* Lavender vertical line */
+  border-left: 3px solid blue; /* Lavender vertical line */
 }
 
 /* Remove line after last */
@@ -79,21 +79,21 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #a855f7; /* Lavender */
-  color: #fff;
+  background:white; /* Lavender */
+  color:black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   font-size: 16px;
-  box-shadow: 0 4px 10px rgba(168, 85, 247, 0.4);
+  
   transition: background 0.5s ease, transform 0.3s ease;
 }
 
 /* On hover / after animation */
 #how-it-works .timeline-step:hover .timeline-icon,
 #how-it-works .timeline-step.aos-animate .timeline-icon {
-  background:#a855f7; /* Blue */
+  background:white; /* Blue */
   transform: scale(1.1);
 }
 

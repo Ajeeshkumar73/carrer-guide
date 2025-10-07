@@ -15,6 +15,8 @@ def user_page(request):
 def predict_page(request):
     return render(request, "predict_page.html")
 
+def assistant(request):
+    return render(request, "assistant.html")
 
 def register_view(request):
     if request.method == "POST":
