@@ -13,10 +13,10 @@
       theme: {
         extend: {
           colors: {
-            primary: '#10a37f',
+            primary: 'black',
             "background-light": "#ffffff",
             "background-dark": "#343541",
-            "sidebar-light": "#f7f7f8",
+            "sidebar-light": "#c0c0c3ff",
             "sidebar-dark": "#202123",
             "text-light": "#202123",
             "text-dark": "#ececf1",
@@ -64,6 +64,80 @@
   </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-sans">
+  <!-- Welcome Modal (put near end of <body>) -->
+<div id="welcome-modal" class="fixed inset-0 z-50 hidden">
+  <!-- overlay -->
+  <div id="welcome-overlay" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+  <!-- dialog -->
+  <div class="relative flex items-center justify-center min-h-screen px-4">
+    <div role="dialog" aria-modal="true" aria-labelledby="welcome-title"
+         class="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-xl shadow-2xl max-w-lg w-full mx-auto p-8 md:p-10 z-10">
+
+      <!-- content -->
+      <h2 id="welcome-title" class="text-2xl md:text-3xl font-semibold text-center mb-4">
+        Thanks for trying CareerGuide
+      </h2>
+      <p class="text-sm md:text-base text-center text-gray-600 dark:text-gray-300 mb-6">
+        Log in or sign up to get smarter responses, to save your chat history and more.
+      </p>
+
+      <!-- actions stacked vertically -->
+      <div class="flex flex-col items-center justify-center gap-4">
+        <!-- Log in button -->
+          <button class="w-full px-8 py-3 rounded-full bg-black text-white font-medium shadow-md
+                         hover:bg-blue-600 transition-transform transform hover:scale-102">
+            Log in
+          </button>
+
+        <!-- Sign up link -->
+        <a href="" class="w-full text-center text-lg text-gray-800 dark:text-gray-300 font-semibold hover:text-blue-600 transition">
+          Sign up for free
+        </a>
+
+        <!-- Stay logged out -->
+        <button id="stay-logged-out" class="w-full border-none outline-none text-gray-800 
+                                          text-lg  hover:underline transition">
+          Stay logged out
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+  (function () {
+    const modal = document.getElementById('welcome-modal');
+    const overlay = document.getElementById('welcome-overlay');
+    const closeBtn = document.getElementById('welcome-close'); // optional, removed if not used
+    const stayBtn = document.getElementById('stay-logged-out');
+
+    function openModal() {
+      modal.classList.remove('hidden');
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+      stayBtn.focus();
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('DOMContentLoaded', openModal);
+    overlay.addEventListener('click', closeModal);
+    stayBtn.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+    });
+  })();
+</script>
+
+
   <div class="flex h-screen">
     <!-- Sidebar -->
     <aside id="sidebar"
@@ -78,7 +152,7 @@
         </button>
       </div>
       <div class="flex-grow p-4 space-y-2">
-        <a  id="new-chat-btn" class="flex items-center justify-between p-3 rounded-md bg-primary text-white" href="#">
+        <a  id="new-chat-btn" class="flex items-center justify-between p-3 rounded-md bg-primary text-white hover:bg-blue-600" href="#">
           <span>New Chat</span>
           <span class="material-icons">edit</span>
         </a>
@@ -97,14 +171,14 @@
             <span class="material-icons">menu</span>
           </button>
 
-          <button id="dark-toggle" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" title="Toggle dark mode">
+          <!--<button id="dark-toggle" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" title="Toggle dark mode">
             <span id="dark-icon" class="material-icons">dark_mode</span>
-          </button>
+          </button>-->
 
-          <button class="text-text-light dark:text-text-dark hover:underline">Login</button>
-          <button class="bg-primary text-white px-4 py-2 rounded-md font-semibold">SIGN IN</button>
+          <button class="text-text-light dark:text-text-dark hover:text-blue-600">Login</button>
+          <button class="bg-primary text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-600">SIGN IN</button>
           <a href="{% url 'home' %}">
-          <button class="text-text-light dark:text-text-dark hover:underline">Quit</button>
+          <button class="text-text-light dark:text-text-dark hover:text-blue-600">Quit</button>
           </a>
         </div>
       </header>
@@ -117,8 +191,8 @@
           </div>
           <div class="flex items-center space-x-3">
             <div class="flex items-center space-x-2 bg-gray-100 p-1 rounded-lg text-sm shadow-inner">
-              <button id="lang-en" onclick="setLanguage('en')" class="px-3 py-1 rounded-md bg-primary text-white">EN</button>
-              <button id="lang-ml" onclick="setLanguage('ml')" class="px-3 py-1 rounded-md hover:bg-gray-200 text-gray-700">ML</button>
+              <button id="lang-en" onclick="setLanguage('en')" class="px-3 py-1 rounded-md bg-primary text-white hover:bg-blue-600">EN</button>
+              <button id="lang-ml" onclick="setLanguage('ml')" class="px-3 py-1 rounded-md hover:bg-blue-600 text-gray-700">ML</button>
             </div>
           </div>
         </div>
@@ -136,14 +210,14 @@
 
       <footer class="p-6  border-gray-200 flex gap-4 items-end bg-input-light dark:bg-input-dark">
         <input type="text" id="user-input" placeholder="Type your career question..."
-               class="flex-grow p-4 rounded-xl bg-input-light dark:bg-input-dark text-white border focus:border-blue-500 focus:outline-none shadow-inner"
+               class="flex-grow p-4 rounded-xl bg-input-light dark:bg-input-dark text-black border focus:border-blue-500 focus:outline-none shadow-inner"
                onkeydown="if(event.key==='Enter') sendMessage()">
 
-       <button id="mic-button" onclick="toggleVoiceInput()" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 text-text-light dark:text-text-dark" title="Voice" style="display:inline-flex">
+       <button id="mic-button" onclick="toggleVoiceInput()" class="p-2 rounded-full hover:bg-blue-600  text-text-light dark:text-text-dark" title="Voice" style="display:inline-flex">
         <svg id="mic-icon"  viewBox="0 0 24 24"><path d="M12 14a3 3 0 003-3V6a3 3 0 10-6 0v5a3 3 0 003 3z"></path></svg><span class="material-icons">mic</span>
       </button>
 
-        <button id="send-button" onclick="sendMessage()" class="w-10 h-10 rounded-full bg-[#10a37f] flex items-center justify-center hover:scale-105 transition shadow">
+        <button id="send-button" onclick="sendMessage()" class="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:scale-105 hover:bg-blue-600 transition shadow">
           <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
         </button>
       </footer>

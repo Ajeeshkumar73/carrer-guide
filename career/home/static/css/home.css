@@ -9,8 +9,6 @@ body {
       background-color: #000;
       border-radius: 5px;
       padding: 0.4rem 1rem;
-      font-weight: 600;
-      font-size: 0.875rem;
       color: #fff;
       transition: all 0.3s ease;
     }

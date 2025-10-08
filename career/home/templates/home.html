@@ -22,7 +22,6 @@
 
   <link rel="stylesheet" href="{% static 'css/home.css' %}">
   <link rel="stylesheet" href="{% static 'css/banner.css' %}">
-  <link rel="stylesheet" href="{% static 'css/front.css' %}">
 <style>
   /* Circle styling */
   .step-circle {
@@ -118,6 +117,75 @@
       font-size:20px;
   }
 
+  
+/* Timeline container */
+#how-it-works .timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+/* Each step */
+#how-it-works .timeline-step {
+  position: relative;
+  padding-left: 60px;
+  padding-bottom: 50px;
+  border-left: 3px solid white; /* Lavender vertical line */
+}
+
+/* Remove line after last */
+#how-it-works .timeline-step:last-child {
+  border-left: 3px solid transparent;
+  padding-bottom: 0;
+}
+
+/* Circle numbers */
+#how-it-works .timeline-icon {
+  position: absolute;
+  left: -22px;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background:white; /* Lavender */
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+
+/* On hover / after animation */
+#how-it-works .timeline-step:hover .timeline-icon,
+#how-it-works .timeline-step.aos-animate .timeline-icon {
+  background:white; /* Blue */
+  transform: scale(1.1);
+}
+
+/* Titles */
+#how-it-works h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color:white;
+}
+
+#how-it-works h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Text */
+#how-it-works p {
+  color: #6b7280; /* Tailwind gray-500 */
+  line-height: 1.6;
+}
+
+
 </style>
 </head>
 <body>
@@ -133,7 +201,6 @@
     <div class="relative w-full flex justify-between items-center px-12 py-6 z-10">
       <div class="text-lg font-semibold tracking-widest">CAREERGUIDE</div>
       <nav class="flex items-center space-x-8 text-sm font-medium" style="margin-right: 70px;">
-        <a href="#community" class="hover:text-blue-600">Find Career</a>
     <a href="#how-it-works" class="hover:text-blue-600">How It Works</a>
     <!--<a href="#review" class="hover:text-blue-600">Reviews</a>-->
     <a href="#about" class="hover:text-blue-600">About</a>
@@ -164,10 +231,35 @@
       <p class="text-gray-200 text-lg sm:text-xl max-w-2xl mx-auto mb-12 font-normal">
         Discover personalized career pathways, expert mentorship, and the skills you need to succeed in your dream profession.
       </p>
-     <a href="{% url 'assistant' %}">
-      <button class="btn-subscribe px-8 py-3 text-lg" style="border-radius:5px;"  >Let's Start</button>
-     </a>
+    <!-- Buttons container (flex row) -->
+    <div class="flex items-center space-x-4">
+      <!-- Let's Start Button -->
+        <a href="{% url 'predict_page' %}">
+        <button class="px-8 py-3 text-lg bg-black hover:bg-blue-600 text-white" style="border-radius:5px;
+      border-radius: 5px;
+     padding: 12px 24px;
+      font-style: italic;
+      font-weight: 100;
+     ">Try CareerGuide</button>
+        </a>
+
+      <!-- 🎤 Mic Button (right of Let's Start) -->
+        <a href="{% url 'assistant' %}">
+      <button
+        id="mic-btn"
+        class="bg-black hover:bg-blue-600 text-white rounded-full p-4 shadow-lg transition transform hover:scale-105 focus:outline-none"
+        title="Start Voice Input"
+      >
+        <!-- Mic SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/>
+          <path d="M19 11a1 1 0 0 0-2 0 5 5 0 0 1-10 0 1 1 0 0 0-2 0 7 7 0 0 0 6 6.93V21H9a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2h-2v-3.07A7 7 0 0 0 19 11z"/>
+        </svg>
+      </button></a>
     </div>
+     
+    </div>
+    
   </section>
 
     <!-- Auth Section -->
@@ -213,7 +305,7 @@
 
 
   <button id="scrollUpBtn" 
-  class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-white text-black flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"
+  class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-black hover:bg-blue-700 text-white flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110 border border-white"
   aria-label="Scroll to top">
   <i class="bi bi-arrow-up"></i>
 </button>
@@ -245,7 +337,7 @@
   <section class="py-5" id="how-it-works" style="height:600px; background-color:black;">
   <div class="container">
     <div class="text-center" data-aos="fade-up">
-        <h2 class="section-title">Your Journey in 3 Simple Steps</h2>
+        <h1 style="color:white;">Your Journey in 3 Simple Steps</h1>
         <p class="lead section-subtitle mb-5">Clarity is closer than you think.</p>
     </div>
     <div class="row justify-content-center">
