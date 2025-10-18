@@ -1,0 +1,1001 @@
+fav_subject,problem_solving,hands_on_pref,math_skill,coding_interest,helping_people,creativity,entrepreneurial_pref,long_study,data_interest,communication,work_env,career_label
+health,medium,yes,medium,no,medium,medium,low,no,low,high,hospital,Healthcare & Wellness
+tech,medium,yes,low,no,high,high,low,yes,low,low,studio,Technology & Programming
+tech,high,no,high,no,medium,medium,low,yes,medium,medium,lab,Technology & Programming
+tech,high,no,low,yes,low,low,high,yes,low,high,studio,Technology & Programming
+business,medium,yes,high,yes,low,high,high,yes,high,low,hospital,Technology & Programming
+art,high,yes,low,yes,medium,high,high,yes,low,low,office,Technology & Programming
+health,high,no,high,no,medium,medium,high,yes,low,medium,studio,Technology & Programming
+tech,high,no,medium,yes,high,medium,high,yes,high,high,lab,Technology & Programming
+tech,high,yes,medium,yes,medium,high,high,yes,high,medium,office,Technology & Programming
+health,medium,yes,low,no,low,medium,medium,yes,high,medium,studio,Healthcare & Wellness
+business,low,yes,medium,no,high,high,high,no,low,low,studio,Creative Arts & Design
+tech,medium,yes,high,no,medium,medium,medium,no,low,high,hospital,Technology & Programming
+business,low,yes,low,yes,low,medium,medium,no,low,medium,studio,Technology & Programming
+art,medium,no,low,no,high,high,high,no,high,low,lab,Research & Science
+science,low,yes,medium,no,medium,high,high,no,low,low,office,Research & Science
+art,low,yes,high,yes,low,high,high,no,high,high,lab,Technology & Programming
+art,medium,yes,high,no,medium,high,medium,no,high,low,hospital,Creative Arts & Design
+tech,medium,no,low,yes,high,high,high,no,medium,high,office,Technology & Programming
+science,high,yes,medium,yes,high,low,high,yes,low,high,hospital,Technology & Programming
+business,low,no,low,yes,medium,medium,high,yes,high,high,hospital,Technology & Programming
+business,high,no,high,no,medium,high,high,no,medium,medium,studio,Technology & Programming
+tech,high,no,medium,no,medium,medium,high,no,medium,low,studio,Technology & Programming
+science,medium,yes,low,no,high,high,medium,yes,medium,low,office,Research & Science
+art,low,no,low,yes,high,medium,medium,no,low,low,office,Technology & Programming
+art,low,yes,low,no,medium,low,low,yes,high,high,hospital,Creative Arts & Design
+tech,low,yes,high,yes,low,medium,high,no,high,high,lab,Technology & Programming
+science,high,no,medium,no,low,medium,high,no,high,high,studio,Technology & Programming
+science,medium,no,low,yes,high,medium,low,no,low,high,lab,Technology & Programming
+tech,medium,no,medium,yes,high,medium,medium,no,low,high,office,Technology & Programming
+art,medium,yes,medium,no,low,medium,medium,yes,high,high,office,Creative Arts & Design
+business,low,no,medium,no,medium,high,high,no,high,low,hospital,Creative Arts & Design
+art,high,yes,low,yes,low,high,medium,no,medium,high,office,Technology & Programming
+science,low,yes,medium,yes,low,medium,medium,no,low,high,hospital,Technology & Programming
+tech,high,yes,high,yes,high,low,low,no,high,low,office,Technology & Programming
+art,medium,no,medium,yes,high,high,medium,no,high,medium,lab,Technology & Programming
+health,high,yes,high,no,medium,high,high,no,low,medium,hospital,Technology & Programming
+tech,medium,yes,low,yes,low,medium,low,no,low,low,office,Technology & Programming
+tech,medium,yes,high,yes,high,medium,high,no,medium,medium,studio,Technology & Programming
+tech,low,no,medium,no,low,low,medium,no,low,medium,lab,Technology & Programming
+tech,low,no,high,yes,low,low,low,no,high,low,office,Technology & Programming
+business,low,yes,high,yes,low,medium,medium,no,medium,low,studio,Technology & Programming
+business,high,yes,medium,yes,medium,medium,low,no,medium,low,studio,Technology & Programming
+business,low,no,low,no,low,high,medium,yes,medium,medium,hospital,Creative Arts & Design
+science,medium,no,medium,no,high,high,medium,yes,high,low,office,Research & Science
+business,medium,no,medium,no,low,high,low,no,low,high,lab,Research & Science
+science,low,no,high,yes,medium,medium,high,no,medium,high,studio,Technology & Programming
+art,low,no,medium,yes,medium,medium,high,no,medium,low,hospital,Technology & Programming
+health,medium,yes,medium,yes,medium,low,low,yes,low,medium,studio,Technology & Programming
+business,medium,no,medium,no,high,low,medium,no,low,high,office,Business & Management
+art,high,yes,high,no,high,medium,medium,yes,low,high,studio,Technology & Programming
+business,medium,no,high,no,medium,medium,high,yes,high,medium,hospital,Business & Management
+business,medium,no,medium,no,medium,medium,high,no,high,high,studio,Business & Management
+business,medium,no,medium,no,low,medium,low,yes,medium,medium,office,Business & Management
+art,high,yes,high,yes,high,high,high,yes,medium,high,hospital,Technology & Programming
+science,high,no,low,no,low,high,medium,yes,medium,high,studio,Technology & Programming
+science,high,no,low,yes,low,medium,low,yes,low,medium,lab,Technology & Programming
+science,low,no,high,no,medium,high,low,yes,high,high,office,Research & Science
+business,medium,yes,medium,no,high,low,low,no,low,medium,studio,Business & Management
+science,medium,no,medium,yes,medium,high,low,yes,low,high,hospital,Technology & Programming
+science,medium,yes,medium,yes,medium,medium,high,yes,high,high,studio,Technology & Programming
+art,high,yes,high,yes,medium,low,high,no,low,medium,office,Technology & Programming
+business,low,yes,high,yes,medium,medium,high,yes,high,high,lab,Technology & Programming
+art,medium,yes,medium,no,medium,low,medium,yes,high,high,office,Creative Arts & Design
+tech,low,no,high,no,medium,high,high,yes,medium,high,hospital,Technology & Programming
+business,low,yes,high,yes,low,low,low,yes,high,medium,lab,Technology & Programming
+health,medium,yes,low,yes,high,medium,high,yes,low,high,lab,Technology & Programming
+business,medium,no,low,yes,high,high,low,no,medium,medium,hospital,Technology & Programming
+art,medium,yes,high,no,medium,medium,medium,yes,medium,low,lab,Research & Science
+health,low,no,medium,yes,high,high,low,yes,low,high,hospital,Technology & Programming
+tech,high,no,low,yes,low,medium,high,yes,medium,medium,hospital,Technology & Programming
+science,medium,yes,medium,no,high,low,low,yes,low,medium,office,Research & Science
+tech,medium,yes,high,yes,medium,low,low,yes,medium,medium,studio,Technology & Programming
+health,high,no,medium,yes,medium,low,high,yes,medium,high,lab,Technology & Programming
+health,medium,yes,high,no,medium,high,high,yes,high,low,studio,Creative Arts & Design
+business,high,yes,high,yes,medium,high,high,yes,low,medium,lab,Technology & Programming
+tech,low,no,high,yes,high,low,medium,yes,low,low,lab,Technology & Programming
+business,high,yes,low,no,low,medium,medium,no,medium,medium,lab,Technology & Programming
+health,medium,no,high,yes,high,medium,low,yes,medium,high,hospital,Technology & Programming
+science,high,yes,medium,no,low,low,low,yes,low,high,office,Technology & Programming
+business,medium,yes,high,no,high,low,low,yes,low,low,hospital,Business & Management
+health,low,no,low,yes,medium,medium,high,yes,low,medium,office,Technology & Programming
+health,low,yes,high,no,low,low,medium,yes,low,low,hospital,Healthcare & Wellness
+tech,low,no,low,yes,medium,high,medium,yes,medium,low,studio,Technology & Programming
+science,high,yes,low,no,high,medium,high,yes,low,high,hospital,Technology & Programming
+business,high,yes,high,yes,low,low,low,yes,high,low,hospital,Technology & Programming
+business,high,yes,low,yes,low,medium,medium,yes,high,high,studio,Technology & Programming
+health,high,no,low,yes,low,medium,high,yes,medium,high,studio,Technology & Programming
+science,medium,no,high,yes,medium,low,medium,no,medium,high,lab,Technology & Programming
+health,low,no,high,no,low,medium,low,yes,medium,high,office,Healthcare & Wellness
+science,low,no,high,no,high,high,low,no,low,low,lab,Research & Science
+tech,low,no,medium,yes,high,high,medium,no,low,medium,studio,Technology & Programming
+tech,medium,yes,medium,yes,low,medium,high,no,low,medium,hospital,Technology & Programming
+business,low,yes,medium,no,low,high,high,yes,low,medium,office,Creative Arts & Design
+health,medium,yes,high,no,high,high,low,no,high,medium,studio,Creative Arts & Design
+science,high,no,medium,no,low,low,low,yes,medium,high,office,Technology & Programming
+tech,high,no,medium,yes,low,high,high,no,high,high,office,Technology & Programming
+science,low,yes,high,no,low,low,high,yes,high,low,studio,Research & Science
+science,high,no,low,no,medium,medium,high,no,high,medium,office,Technology & Programming
+art,low,no,medium,yes,high,high,low,yes,high,high,studio,Technology & Programming
+tech,medium,no,medium,yes,high,medium,medium,no,high,high,office,Technology & Programming
+tech,medium,yes,medium,no,high,medium,low,no,high,medium,office,Technology & Programming
+tech,medium,no,high,yes,medium,medium,medium,yes,high,high,hospital,Technology & Programming
+art,medium,yes,low,yes,high,high,medium,yes,medium,medium,lab,Technology & Programming
+tech,low,no,high,no,low,low,medium,yes,low,low,lab,Technology & Programming
+health,high,yes,high,no,low,low,low,yes,high,low,lab,Technology & Programming
+health,low,yes,medium,yes,low,low,medium,yes,high,high,hospital,Technology & Programming
+tech,low,yes,low,no,low,low,low,no,medium,high,hospital,Technology & Programming
+science,low,no,medium,no,medium,low,low,yes,low,low,studio,Research & Science
+business,low,yes,low,no,low,low,medium,yes,medium,high,studio,Business & Management
+science,high,yes,high,no,high,low,high,no,low,medium,hospital,Technology & Programming
+science,medium,yes,high,yes,medium,low,low,yes,low,low,studio,Technology & Programming
+tech,medium,yes,medium,yes,low,medium,medium,no,low,medium,lab,Technology & Programming
+health,low,yes,low,no,medium,high,high,no,high,medium,studio,Creative Arts & Design
+art,medium,no,high,no,low,medium,low,yes,low,high,lab,Research & Science
+business,high,yes,low,yes,high,high,high,no,medium,low,studio,Technology & Programming
+health,low,no,low,no,low,high,medium,yes,medium,medium,hospital,Creative Arts & Design
+tech,low,no,medium,yes,high,high,medium,no,medium,low,office,Technology & Programming
+business,high,yes,low,yes,medium,high,high,no,low,medium,studio,Technology & Programming
+art,low,yes,high,no,high,high,low,no,low,low,studio,Creative Arts & Design
+art,low,no,low,yes,high,high,low,yes,low,high,hospital,Technology & Programming
+art,medium,no,medium,no,high,high,high,yes,high,high,studio,Creative Arts & Design
+business,medium,yes,high,yes,high,high,medium,no,low,low,hospital,Technology & Programming
+art,medium,yes,high,no,medium,medium,high,yes,high,medium,hospital,Creative Arts & Design
+health,low,yes,medium,yes,high,high,medium,yes,high,low,hospital,Technology & Programming
+health,low,yes,medium,yes,high,medium,low,yes,high,medium,studio,Technology & Programming
+business,low,no,low,no,high,low,high,yes,high,low,office,Business & Management
+business,high,yes,high,no,medium,high,high,yes,medium,high,office,Technology & Programming
+health,medium,yes,medium,no,medium,medium,high,yes,low,high,hospital,Business & Management
+art,high,yes,medium,yes,high,low,medium,no,medium,low,studio,Technology & Programming
+tech,medium,yes,low,yes,low,low,high,yes,low,low,studio,Technology & Programming
+business,medium,yes,high,no,low,high,high,no,low,low,office,Creative Arts & Design
+tech,high,yes,high,no,high,high,low,yes,high,low,studio,Technology & Programming
+health,high,no,low,yes,low,low,medium,no,medium,low,lab,Technology & Programming
+tech,high,no,high,yes,low,medium,low,no,low,low,studio,Technology & Programming
+health,high,yes,high,no,low,low,high,yes,high,medium,lab,Technology & Programming
+science,medium,yes,medium,no,low,low,high,yes,medium,medium,hospital,Research & Science
+art,low,no,medium,no,high,low,high,yes,medium,low,hospital,Creative Arts & Design
+health,medium,yes,medium,no,medium,low,medium,yes,low,medium,lab,Research & Science
+business,high,yes,high,yes,medium,medium,low,yes,low,high,office,Technology & Programming
+art,medium,no,high,yes,high,low,low,yes,low,high,studio,Technology & Programming
+health,low,yes,medium,no,medium,low,low,no,medium,low,studio,Healthcare & Wellness
+health,medium,no,low,yes,high,medium,medium,no,medium,low,office,Technology & Programming
+business,medium,no,low,yes,medium,low,medium,no,high,high,lab,Technology & Programming
+health,high,no,high,yes,high,low,low,no,medium,high,studio,Technology & Programming
+tech,high,no,high,no,high,medium,low,no,low,low,office,Technology & Programming
+tech,medium,no,high,no,low,medium,medium,yes,medium,medium,hospital,Technology & Programming
+science,low,no,low,yes,high,medium,low,yes,low,high,lab,Technology & Programming
+tech,high,no,high,no,medium,medium,medium,yes,low,high,office,Technology & Programming
+art,high,no,medium,no,high,medium,medium,yes,medium,medium,office,Technology & Programming
+science,medium,no,medium,no,high,medium,medium,no,high,medium,hospital,Research & Science
+health,medium,yes,high,no,low,low,medium,no,high,medium,hospital,Healthcare & Wellness
+art,high,yes,low,no,medium,medium,high,yes,medium,high,hospital,Technology & Programming
+health,medium,yes,high,yes,high,low,low,no,high,medium,studio,Technology & Programming
+art,low,no,medium,yes,low,medium,low,no,medium,high,office,Technology & Programming
+health,low,yes,low,no,high,high,medium,no,high,high,lab,Research & Science
+health,high,no,medium,no,low,low,low,no,medium,high,lab,Technology & Programming
+art,high,yes,high,no,medium,low,medium,yes,medium,medium,lab,Technology & Programming
+tech,medium,no,high,yes,high,high,medium,no,high,high,lab,Technology & Programming
+art,high,yes,high,yes,medium,medium,high,yes,low,high,lab,Technology & Programming
+business,low,no,low,no,high,low,high,no,medium,medium,studio,Business & Management
+business,low,no,low,yes,medium,high,low,yes,high,medium,lab,Technology & Programming
+science,medium,yes,medium,no,high,low,medium,yes,medium,low,office,Research & Science
+art,high,yes,low,yes,high,medium,high,no,medium,low,studio,Technology & Programming
+science,high,no,low,yes,low,low,high,yes,medium,low,office,Technology & Programming
+business,high,no,low,no,high,low,low,yes,high,medium,office,Technology & Programming
+tech,low,no,medium,no,low,high,low,no,low,medium,office,Technology & Programming
+business,high,no,high,yes,low,medium,high,yes,low,medium,studio,Technology & Programming
+business,high,yes,medium,no,high,high,high,no,medium,medium,hospital,Technology & Programming
+science,medium,yes,low,no,medium,high,medium,no,high,low,studio,Research & Science
+health,low,yes,high,no,low,low,low,yes,medium,low,lab,Research & Science
+business,medium,yes,medium,no,low,low,high,yes,high,medium,studio,Business & Management
+science,low,no,high,yes,medium,high,medium,no,low,high,studio,Technology & Programming
+art,high,no,low,yes,medium,low,low,yes,high,low,lab,Technology & Programming
+business,high,yes,low,yes,medium,high,medium,yes,high,medium,hospital,Technology & Programming
+art,medium,yes,low,no,high,high,high,no,high,high,office,Creative Arts & Design
+art,medium,no,medium,yes,low,high,low,yes,medium,low,office,Technology & Programming
+tech,medium,yes,high,no,medium,medium,high,yes,high,high,office,Technology & Programming
+art,low,no,high,no,high,medium,low,yes,low,low,studio,Creative Arts & Design
+art,low,yes,high,yes,medium,high,medium,no,high,high,lab,Technology & Programming
+science,medium,no,low,no,high,low,high,no,medium,high,lab,Research & Science
+art,high,no,medium,yes,medium,high,low,yes,high,low,office,Technology & Programming
+business,low,yes,medium,no,medium,high,high,no,medium,low,hospital,Creative Arts & Design
+health,low,no,medium,yes,low,high,medium,no,medium,low,hospital,Technology & Programming
+health,low,no,medium,no,medium,low,medium,yes,low,high,office,Healthcare & Wellness
+tech,low,yes,high,yes,medium,high,medium,yes,low,medium,office,Technology & Programming
+health,low,no,medium,yes,medium,medium,high,no,high,high,office,Technology & Programming
+art,medium,no,low,yes,medium,high,high,yes,low,low,office,Technology & Programming
+business,high,yes,medium,no,medium,medium,low,no,high,medium,hospital,Technology & Programming
+health,medium,yes,medium,yes,medium,medium,high,no,low,high,lab,Technology & Programming
+health,low,no,medium,yes,medium,medium,high,yes,low,high,studio,Technology & Programming
+science,high,no,low,yes,medium,medium,low,no,medium,high,lab,Technology & Programming
+business,high,yes,low,no,low,low,low,no,high,low,hospital,Technology & Programming
+science,low,no,low,yes,low,low,medium,no,medium,high,office,Technology & Programming
+business,low,yes,medium,yes,low,low,medium,no,low,medium,office,Technology & Programming
+art,low,yes,medium,yes,high,high,low,yes,high,high,lab,Technology & Programming
+business,high,no,low,no,low,high,medium,no,low,high,hospital,Technology & Programming
+business,medium,no,high,yes,medium,low,medium,yes,high,medium,hospital,Technology & Programming
+tech,low,no,low,no,high,low,high,yes,high,high,studio,Technology & Programming
+business,medium,yes,medium,no,medium,high,medium,yes,high,high,office,Creative Arts & Design
+business,medium,yes,low,no,medium,medium,high,no,medium,low,hospital,Business & Management
+health,medium,no,low,yes,medium,low,low,no,high,high,office,Technology & Programming
+tech,high,no,medium,no,high,high,low,no,medium,medium,hospital,Technology & Programming
+tech,medium,yes,low,no,medium,low,low,yes,medium,low,hospital,Technology & Programming
+business,medium,no,high,yes,low,high,high,no,medium,medium,lab,Technology & Programming
+art,high,no,medium,no,medium,high,low,no,low,medium,studio,Technology & Programming
+health,high,yes,low,no,high,low,low,no,high,high,office,Technology & Programming
+art,high,yes,low,no,high,low,medium,no,medium,high,studio,Technology & Programming
+art,medium,no,high,yes,high,low,medium,no,medium,low,hospital,Technology & Programming
+tech,low,yes,low,yes,high,low,low,no,high,medium,lab,Technology & Programming
+art,medium,no,low,no,medium,low,medium,yes,medium,low,hospital,Creative Arts & Design
+business,high,yes,medium,yes,medium,medium,medium,yes,high,medium,studio,Technology & Programming
+art,medium,no,high,yes,high,low,low,yes,high,medium,office,Technology & Programming
+tech,low,yes,high,yes,low,high,medium,no,high,low,hospital,Technology & Programming
+health,low,no,high,yes,medium,high,medium,yes,high,low,hospital,Technology & Programming
+art,medium,yes,low,no,medium,high,low,yes,medium,medium,office,Creative Arts & Design
+health,low,no,high,yes,medium,high,low,yes,medium,low,studio,Technology & Programming
+health,medium,yes,medium,no,low,high,medium,no,high,medium,lab,Research & Science
+science,medium,yes,medium,yes,high,medium,medium,yes,low,high,lab,Technology & Programming
+health,high,no,medium,no,low,medium,medium,no,high,high,hospital,Technology & Programming
+art,low,no,low,no,low,low,low,yes,medium,low,hospital,Creative Arts & Design
+art,low,no,high,no,low,low,medium,no,low,high,hospital,Creative Arts & Design
+business,medium,no,high,no,medium,high,low,yes,high,low,lab,Research & Science
+science,low,no,low,yes,high,low,low,no,medium,high,hospital,Technology & Programming
+science,high,yes,medium,yes,low,medium,low,yes,low,low,hospital,Technology & Programming
+health,low,yes,low,yes,low,medium,high,yes,low,low,office,Technology & Programming
+business,low,no,high,no,medium,high,high,no,low,high,office,Creative Arts & Design
+science,medium,yes,medium,no,medium,low,low,yes,low,medium,lab,Research & Science
+health,medium,yes,low,no,medium,medium,medium,no,low,medium,hospital,Healthcare & Wellness
+business,high,no,high,no,medium,high,low,no,high,low,lab,Technology & Programming
+business,high,no,medium,no,low,medium,low,yes,low,medium,lab,Technology & Programming
+tech,high,no,high,yes,high,low,medium,no,medium,low,office,Technology & Programming
+health,medium,no,low,yes,medium,low,high,yes,low,medium,office,Technology & Programming
+health,high,yes,medium,no,low,medium,low,no,medium,high,lab,Technology & Programming
+tech,medium,yes,medium,yes,high,low,high,yes,high,medium,office,Technology & Programming
+business,low,no,low,yes,high,medium,medium,no,high,medium,office,Technology & Programming
+art,low,yes,high,no,medium,high,high,no,low,medium,hospital,Creative Arts & Design
+business,low,yes,medium,no,medium,high,high,yes,low,medium,office,Creative Arts & Design
+business,low,no,medium,yes,medium,high,medium,yes,medium,low,hospital,Technology & Programming
+art,low,yes,medium,yes,low,high,medium,yes,low,low,office,Technology & Programming
+art,medium,no,low,no,high,low,high,no,medium,high,office,Creative Arts & Design
+art,medium,yes,high,yes,high,medium,medium,yes,high,low,lab,Technology & Programming
+science,medium,no,medium,yes,medium,high,medium,no,low,medium,studio,Technology & Programming
+art,low,no,medium,no,low,medium,low,yes,medium,low,lab,Research & Science
+science,high,no,medium,yes,medium,high,high,yes,low,medium,office,Technology & Programming
+tech,high,yes,low,no,high,low,high,yes,medium,medium,studio,Technology & Programming
+art,low,no,medium,yes,medium,high,low,yes,low,high,studio,Technology & Programming
+tech,medium,yes,high,no,medium,high,medium,no,medium,medium,studio,Technology & Programming
+tech,medium,yes,medium,yes,high,medium,low,no,high,medium,lab,Technology & Programming
+tech,low,no,medium,no,medium,low,medium,yes,high,low,hospital,Technology & Programming
+art,medium,no,medium,no,medium,high,low,yes,low,high,lab,Research & Science
+art,medium,yes,high,yes,low,low,high,yes,low,low,office,Technology & Programming
+art,high,yes,medium,yes,low,medium,low,yes,medium,low,office,Technology & Programming
+health,low,no,low,yes,low,low,medium,yes,low,low,studio,Technology & Programming
+health,medium,yes,low,no,high,low,high,yes,medium,high,office,Business & Management
+business,high,no,medium,no,low,medium,low,yes,low,high,lab,Technology & Programming
+tech,medium,no,high,yes,high,high,medium,yes,medium,low,hospital,Technology & Programming
+art,low,no,medium,no,low,high,low,yes,medium,medium,studio,Creative Arts & Design
+art,high,yes,medium,no,low,high,high,no,low,low,lab,Technology & Programming
+science,medium,no,high,no,high,low,medium,yes,high,high,lab,Research & Science
+health,medium,yes,high,yes,low,high,high,no,low,low,office,Technology & Programming
+art,high,yes,medium,yes,medium,high,medium,yes,low,medium,hospital,Technology & Programming
+science,medium,yes,low,no,high,low,high,yes,low,high,lab,Research & Science
+science,medium,yes,medium,no,low,medium,medium,yes,low,high,office,Research & Science
+science,high,yes,high,yes,medium,medium,high,yes,low,high,studio,Technology & Programming
+tech,medium,no,low,no,medium,medium,medium,no,medium,high,studio,Technology & Programming
+business,medium,no,medium,yes,medium,high,high,yes,low,low,lab,Technology & Programming
+health,low,no,high,no,low,high,high,no,low,low,lab,Research & Science
+art,high,yes,medium,yes,medium,medium,medium,no,medium,medium,studio,Technology & Programming
+business,medium,no,high,yes,high,medium,high,no,medium,high,studio,Technology & Programming
+art,low,no,high,yes,low,high,medium,yes,high,low,hospital,Technology & Programming
+tech,high,no,medium,yes,high,low,low,no,low,medium,hospital,Technology & Programming
+health,medium,yes,high,yes,low,low,low,no,low,low,lab,Technology & Programming
+tech,high,yes,high,yes,medium,medium,medium,no,low,low,lab,Technology & Programming
+business,medium,no,high,no,high,low,high,no,low,medium,studio,Business & Management
+science,low,no,low,no,low,high,high,no,medium,medium,studio,Research & Science
+business,low,yes,high,no,high,high,low,yes,low,low,hospital,Creative Arts & Design
+business,low,no,medium,no,high,high,medium,yes,medium,low,hospital,Creative Arts & Design
+health,high,no,low,no,low,high,medium,no,high,high,office,Technology & Programming
+science,high,yes,medium,yes,medium,medium,low,no,high,low,office,Technology & Programming
+health,high,yes,medium,no,high,high,high,no,medium,high,lab,Technology & Programming
+business,low,no,high,yes,low,low,high,no,low,medium,lab,Technology & Programming
+tech,low,no,medium,no,high,low,high,yes,high,high,lab,Technology & Programming
+art,high,no,low,yes,high,low,medium,yes,low,medium,lab,Technology & Programming
+tech,low,yes,medium,yes,high,high,low,no,high,high,studio,Technology & Programming
+tech,medium,no,low,no,low,low,medium,yes,high,low,lab,Technology & Programming
+art,low,no,low,no,low,high,high,no,low,low,office,Creative Arts & Design
+art,high,yes,medium,yes,medium,low,low,no,high,low,office,Technology & Programming
+tech,high,no,high,yes,low,low,high,no,high,high,studio,Technology & Programming
+science,low,yes,high,yes,low,low,low,yes,low,low,studio,Technology & Programming
+art,high,yes,medium,no,low,high,high,no,high,low,lab,Technology & Programming
+tech,low,yes,low,no,low,high,low,no,low,medium,hospital,Technology & Programming
+tech,low,yes,medium,yes,medium,high,low,yes,low,high,studio,Technology & Programming
+science,medium,yes,high,no,medium,high,high,no,high,low,lab,Research & Science
+art,medium,yes,medium,no,low,high,low,no,medium,high,lab,Research & Science
+art,low,no,high,yes,high,high,medium,yes,high,low,lab,Technology & Programming
+business,low,no,low,yes,low,low,low,no,low,medium,hospital,Technology & Programming
+health,low,no,high,no,medium,high,medium,no,low,medium,lab,Research & Science
+health,medium,yes,high,no,medium,medium,low,yes,high,high,hospital,Healthcare & Wellness
+tech,low,no,medium,yes,medium,high,low,no,low,low,lab,Technology & Programming
+tech,medium,yes,medium,no,high,high,medium,yes,medium,low,studio,Technology & Programming
+art,low,yes,high,yes,medium,low,low,no,high,medium,lab,Technology & Programming
+art,medium,yes,low,yes,high,high,high,no,medium,low,lab,Technology & Programming
+art,high,no,low,no,low,medium,low,no,high,low,studio,Technology & Programming
+art,high,yes,low,yes,high,high,low,yes,high,low,office,Technology & Programming
+science,low,yes,high,yes,low,high,high,yes,high,low,hospital,Technology & Programming
+art,medium,no,low,yes,low,low,high,yes,low,low,office,Technology & Programming
+art,medium,yes,medium,no,high,medium,low,no,high,medium,office,Creative Arts & Design
+art,medium,yes,medium,yes,low,low,high,no,medium,high,studio,Technology & Programming
+health,medium,yes,medium,no,medium,low,low,yes,high,medium,office,Healthcare & Wellness
+business,high,no,low,yes,low,low,high,no,high,high,studio,Technology & Programming
+art,medium,yes,high,yes,medium,high,medium,no,high,high,lab,Technology & Programming
+business,low,no,medium,yes,high,high,low,no,low,medium,office,Technology & Programming
+art,medium,no,medium,no,high,low,medium,no,high,medium,hospital,Creative Arts & Design
+business,high,no,high,yes,low,low,medium,yes,high,high,studio,Technology & Programming
+business,high,yes,medium,yes,low,low,low,no,high,high,office,Technology & Programming
+tech,low,yes,medium,yes,high,medium,high,yes,low,low,studio,Technology & Programming
+business,high,yes,medium,yes,high,low,high,no,low,low,lab,Technology & Programming
+business,medium,yes,medium,no,high,low,medium,yes,medium,high,studio,Business & Management
+tech,medium,no,low,yes,medium,low,medium,no,medium,low,studio,Technology & Programming
+tech,low,no,high,no,high,low,medium,no,low,medium,studio,Technology & Programming
+health,low,no,medium,yes,high,medium,medium,yes,low,low,lab,Technology & Programming
+health,high,no,medium,yes,low,high,low,yes,low,high,studio,Technology & Programming
+health,medium,no,high,yes,high,medium,low,yes,low,low,studio,Technology & Programming
+tech,high,yes,high,no,low,high,high,yes,high,medium,office,Technology & Programming
+business,high,no,low,no,high,medium,medium,yes,medium,medium,studio,Technology & Programming
+business,medium,yes,high,yes,low,low,high,no,medium,high,office,Technology & Programming
+health,high,yes,high,yes,medium,high,low,no,medium,medium,studio,Technology & Programming
+art,low,no,low,no,high,medium,low,no,medium,medium,office,Creative Arts & Design
+science,medium,yes,low,yes,low,medium,high,no,high,high,office,Technology & Programming
+tech,high,no,high,yes,low,high,high,no,medium,low,office,Technology & Programming
+business,low,no,medium,no,high,high,high,no,medium,low,office,Creative Arts & Design
+business,low,no,high,yes,high,low,low,no,high,low,hospital,Technology & Programming
+tech,low,no,low,no,high,medium,medium,no,medium,low,lab,Technology & Programming
+science,low,yes,low,no,high,low,low,no,medium,high,office,Research & Science
+health,low,yes,high,yes,high,medium,high,no,low,low,hospital,Technology & Programming
+health,high,yes,medium,yes,medium,high,low,no,low,low,studio,Technology & Programming
+tech,high,yes,high,no,medium,high,medium,yes,low,low,lab,Technology & Programming
+art,low,yes,high,yes,low,low,medium,no,medium,medium,office,Technology & Programming
+science,high,yes,medium,no,medium,low,medium,yes,low,low,hospital,Technology & Programming
+health,high,yes,high,no,low,high,medium,yes,medium,low,hospital,Technology & Programming
+business,high,no,medium,no,high,medium,medium,yes,medium,high,hospital,Technology & Programming
+science,high,no,medium,no,medium,medium,medium,yes,low,high,office,Technology & Programming
+tech,low,yes,low,no,low,medium,low,yes,medium,low,lab,Technology & Programming
+health,medium,yes,medium,no,low,high,high,no,medium,medium,lab,Research & Science
+business,medium,yes,high,no,low,low,medium,yes,low,high,office,Business & Management
+tech,medium,yes,high,no,medium,medium,high,yes,high,high,hospital,Technology & Programming
+tech,low,yes,medium,no,low,medium,medium,yes,medium,high,hospital,Technology & Programming
+tech,medium,no,medium,no,low,medium,high,yes,high,medium,studio,Technology & Programming
+science,high,no,medium,no,high,medium,low,yes,low,low,office,Technology & Programming
+health,low,no,medium,no,medium,medium,high,no,low,medium,lab,Research & Science
+science,low,no,high,yes,medium,medium,medium,no,high,high,lab,Technology & Programming
+business,low,no,medium,yes,low,low,low,no,high,low,lab,Technology & Programming
+health,medium,yes,high,yes,medium,low,medium,no,high,medium,hospital,Technology & Programming
+tech,medium,yes,medium,no,medium,medium,medium,yes,high,high,hospital,Technology & Programming
+art,high,no,medium,yes,high,high,low,no,low,medium,hospital,Technology & Programming
+health,medium,no,low,no,high,low,low,yes,medium,high,studio,Healthcare & Wellness
+health,low,no,high,no,high,low,medium,no,high,low,office,Healthcare & Wellness
+business,high,no,low,no,medium,high,low,no,high,low,studio,Technology & Programming
+business,high,no,medium,yes,medium,medium,medium,no,high,low,studio,Technology & Programming
+science,low,no,low,yes,high,medium,low,yes,high,medium,hospital,Technology & Programming
+business,high,no,medium,no,medium,high,low,yes,high,high,hospital,Technology & Programming
+science,high,no,low,no,low,low,high,no,high,high,office,Technology & Programming
+health,medium,yes,high,no,medium,medium,medium,no,high,high,lab,Research & Science
+health,high,yes,high,yes,medium,medium,medium,no,medium,low,hospital,Technology & Programming
+business,medium,yes,low,no,medium,low,high,no,high,medium,office,Business & Management
+tech,high,no,low,no,medium,low,low,no,medium,low,office,Technology & Programming
+science,medium,yes,low,no,high,low,low,no,high,medium,lab,Research & Science
+science,low,yes,low,yes,medium,low,medium,no,low,medium,lab,Technology & Programming
+science,high,no,medium,no,low,low,medium,yes,high,medium,lab,Technology & Programming
+art,low,yes,high,yes,low,high,medium,no,low,high,office,Technology & Programming
+art,high,yes,low,yes,high,high,low,no,high,high,lab,Technology & Programming
+art,high,no,low,yes,low,low,low,yes,high,low,office,Technology & Programming
+tech,high,no,medium,yes,high,high,medium,no,medium,low,lab,Technology & Programming
+tech,high,no,medium,yes,low,medium,medium,yes,medium,medium,office,Technology & Programming
+science,medium,no,low,yes,high,medium,high,no,low,medium,office,Technology & Programming
+health,low,no,high,no,high,high,high,no,medium,low,studio,Creative Arts & Design
+business,low,yes,low,no,medium,high,low,no,low,high,lab,Research & Science
+business,low,no,high,no,medium,medium,medium,yes,medium,medium,studio,Business & Management
+tech,high,no,medium,yes,high,low,low,yes,high,low,lab,Technology & Programming
+science,low,no,medium,no,medium,medium,medium,yes,medium,low,office,Research & Science
+business,medium,yes,low,no,low,high,high,yes,medium,low,lab,Research & Science
+science,low,yes,low,no,medium,high,medium,no,high,medium,lab,Research & Science
+art,high,no,low,no,medium,high,medium,yes,medium,low,office,Technology & Programming
+art,low,yes,low,yes,high,medium,medium,yes,high,low,hospital,Technology & Programming
+art,high,yes,high,yes,medium,medium,low,no,high,high,hospital,Technology & Programming
+business,medium,no,medium,no,high,high,high,yes,medium,high,studio,Creative Arts & Design
+health,high,no,low,yes,high,low,low,yes,high,low,studio,Technology & Programming
+health,high,no,medium,no,medium,high,low,no,low,high,hospital,Technology & Programming
+business,high,yes,high,no,medium,medium,low,no,high,high,office,Technology & Programming
+science,low,yes,low,no,medium,low,high,no,high,low,studio,Research & Science
+tech,medium,yes,medium,no,high,high,low,yes,high,high,lab,Technology & Programming
+art,low,yes,high,yes,low,high,low,yes,low,medium,studio,Technology & Programming
+health,high,yes,low,yes,low,low,medium,no,low,medium,studio,Technology & Programming
+tech,medium,no,medium,no,high,medium,low,no,high,medium,lab,Technology & Programming
+business,medium,no,medium,no,high,high,high,no,high,medium,hospital,Creative Arts & Design
+science,medium,yes,low,yes,low,low,high,no,medium,low,lab,Technology & Programming
+tech,high,yes,low,yes,medium,medium,low,yes,low,low,office,Technology & Programming
+business,high,yes,medium,yes,high,medium,high,no,high,low,lab,Technology & Programming
+health,high,yes,high,yes,high,medium,low,no,low,high,studio,Technology & Programming
+business,high,no,medium,no,high,high,high,no,medium,high,office,Technology & Programming
+science,medium,yes,high,yes,high,medium,high,yes,high,high,office,Technology & Programming
+science,high,yes,high,yes,high,medium,high,yes,low,medium,studio,Technology & Programming
+tech,high,yes,high,yes,low,low,high,yes,low,high,office,Technology & Programming
+health,high,yes,medium,no,low,medium,low,no,medium,low,studio,Technology & Programming
+health,low,no,medium,no,medium,low,low,no,high,high,lab,Research & Science
+health,medium,no,high,no,high,medium,high,no,high,medium,hospital,Business & Management
+business,low,yes,medium,no,low,low,medium,yes,medium,medium,hospital,Business & Management
+art,high,yes,high,no,medium,medium,high,yes,high,medium,hospital,Technology & Programming
+health,medium,no,high,no,high,high,low,no,high,high,studio,Creative Arts & Design
+health,high,no,high,no,high,low,high,no,low,medium,lab,Technology & Programming
+art,medium,no,medium,yes,medium,medium,low,no,low,low,hospital,Technology & Programming
+art,low,yes,low,no,high,medium,medium,no,high,medium,lab,Research & Science
+tech,high,yes,high,yes,low,medium,high,yes,high,high,office,Technology & Programming
+health,medium,yes,medium,no,medium,low,high,yes,medium,medium,studio,Business & Management
+business,high,no,high,no,low,high,medium,yes,medium,low,studio,Technology & Programming
+health,high,no,low,yes,high,medium,low,yes,high,low,office,Technology & Programming
+health,low,no,high,yes,low,low,low,no,medium,low,office,Technology & Programming
+business,low,yes,low,no,high,low,high,no,medium,medium,lab,Research & Science
+science,low,yes,medium,yes,low,high,medium,no,high,low,hospital,Technology & Programming
+science,high,no,low,no,medium,low,low,no,low,medium,lab,Technology & Programming
+tech,high,yes,medium,no,medium,low,low,yes,low,low,studio,Technology & Programming
+health,high,yes,low,yes,high,high,high,no,medium,low,lab,Technology & Programming
+tech,medium,yes,medium,yes,low,low,medium,yes,low,medium,lab,Technology & Programming
+business,low,yes,medium,yes,low,low,high,yes,high,low,studio,Technology & Programming
+health,high,no,low,yes,medium,low,low,yes,high,medium,lab,Technology & Programming
+science,medium,yes,low,yes,medium,medium,high,no,high,medium,lab,Technology & Programming
+business,high,no,medium,yes,medium,high,low,no,low,high,lab,Technology & Programming
+health,high,no,low,yes,medium,low,medium,no,medium,medium,hospital,Technology & Programming
+health,low,yes,high,no,medium,high,high,yes,high,low,studio,Creative Arts & Design
+tech,medium,no,high,yes,medium,low,low,yes,low,low,hospital,Technology & Programming
+science,high,no,high,yes,high,medium,low,no,high,medium,lab,Technology & Programming
+business,low,yes,medium,yes,high,low,low,no,high,high,studio,Technology & Programming
+health,low,no,medium,no,low,medium,medium,yes,high,medium,studio,Healthcare & Wellness
+science,medium,yes,medium,no,high,low,low,no,high,high,lab,Research & Science
+science,low,no,high,no,high,low,low,no,high,low,studio,Research & Science
+business,high,no,medium,yes,low,medium,low,no,high,low,office,Technology & Programming
+business,high,yes,medium,yes,low,low,medium,no,medium,low,studio,Technology & Programming
+health,high,yes,high,yes,low,medium,medium,yes,medium,low,studio,Technology & Programming
+health,low,yes,medium,no,low,high,low,yes,low,medium,hospital,Creative Arts & Design
+art,medium,yes,medium,no,low,high,medium,no,high,low,office,Creative Arts & Design
+tech,low,no,medium,no,low,medium,low,no,medium,high,hospital,Technology & Programming
+health,medium,no,high,no,low,medium,low,no,low,low,hospital,Healthcare & Wellness
+health,high,no,medium,no,low,medium,medium,yes,high,low,office,Technology & Programming
+science,medium,no,low,yes,high,low,low,no,medium,medium,studio,Technology & Programming
+art,high,no,low,no,high,low,high,yes,low,high,lab,Technology & Programming
+business,low,yes,high,yes,high,high,medium,no,low,medium,lab,Technology & Programming
+art,medium,no,low,yes,medium,medium,medium,yes,high,medium,studio,Technology & Programming
+art,high,no,low,yes,medium,medium,low,no,medium,medium,lab,Technology & Programming
+tech,high,no,high,yes,low,high,medium,no,low,low,studio,Technology & Programming
+tech,medium,yes,low,yes,low,high,medium,no,low,high,lab,Technology & Programming
+business,medium,no,high,no,medium,low,medium,yes,high,low,office,Business & Management
+tech,medium,no,medium,yes,low,low,low,yes,high,low,studio,Technology & Programming
+science,high,yes,high,yes,low,medium,high,yes,medium,low,lab,Technology & Programming
+science,low,no,medium,no,medium,low,medium,no,medium,high,office,Research & Science
+business,medium,yes,low,no,low,medium,low,no,medium,low,lab,Research & Science
+tech,high,no,medium,yes,medium,low,high,yes,low,high,lab,Technology & Programming
+business,high,no,low,no,low,high,medium,yes,medium,low,studio,Technology & Programming
+business,high,no,medium,no,low,low,low,yes,medium,low,office,Technology & Programming
+tech,high,yes,low,no,high,medium,high,no,high,high,hospital,Technology & Programming
+business,high,yes,high,no,low,high,high,yes,high,medium,studio,Technology & Programming
+business,medium,no,high,yes,medium,medium,high,yes,high,medium,studio,Technology & Programming
+tech,medium,yes,medium,yes,high,high,high,yes,low,high,studio,Technology & Programming
+science,low,yes,high,yes,low,medium,medium,no,low,medium,hospital,Technology & Programming
+science,medium,no,low,yes,low,low,high,no,medium,medium,lab,Technology & Programming
+tech,medium,yes,high,yes,high,low,medium,no,high,low,lab,Technology & Programming
+business,high,yes,medium,no,low,high,medium,yes,low,high,hospital,Technology & Programming
+science,medium,yes,low,yes,low,low,low,no,high,low,office,Technology & Programming
+health,high,no,medium,no,medium,low,high,yes,medium,medium,office,Technology & Programming
+tech,low,yes,high,yes,medium,medium,low,no,high,high,studio,Technology & Programming
+tech,low,no,low,no,high,high,low,no,low,medium,office,Technology & Programming
+business,medium,no,high,no,high,high,medium,no,low,low,studio,Creative Arts & Design
+art,low,no,medium,no,high,medium,high,yes,high,low,hospital,Creative Arts & Design
+business,high,yes,low,no,low,medium,low,yes,high,low,studio,Technology & Programming
+tech,low,no,low,yes,high,low,medium,no,low,high,hospital,Technology & Programming
+science,medium,no,low,no,medium,medium,low,yes,medium,high,hospital,Research & Science
+health,low,no,high,no,medium,high,high,yes,medium,low,office,Creative Arts & Design
+business,high,yes,low,no,high,medium,medium,no,low,high,studio,Technology & Programming
+art,medium,no,medium,yes,high,low,medium,yes,medium,high,lab,Technology & Programming
+health,high,yes,high,no,high,low,medium,yes,medium,medium,lab,Technology & Programming
+science,high,no,low,no,low,high,low,no,low,low,studio,Technology & Programming
+tech,low,no,low,yes,high,medium,low,yes,low,high,hospital,Technology & Programming
+health,high,yes,low,yes,low,low,high,yes,high,high,lab,Technology & Programming
+science,low,no,low,no,medium,medium,medium,no,high,medium,studio,Research & Science
+art,medium,no,high,no,low,medium,low,no,high,low,lab,Research & Science
+business,low,yes,high,no,high,low,high,yes,medium,medium,lab,Research & Science
+business,low,yes,medium,yes,medium,high,low,yes,medium,low,hospital,Technology & Programming
+health,low,yes,high,yes,low,low,high,no,high,medium,hospital,Technology & Programming
+art,medium,no,low,no,low,low,medium,yes,medium,medium,studio,Creative Arts & Design
+art,low,yes,low,no,medium,low,low,yes,high,high,office,Creative Arts & Design
+art,medium,no,medium,no,high,high,low,no,medium,low,studio,Creative Arts & Design
+art,low,no,low,no,high,low,high,no,medium,high,lab,Research & Science
+science,high,yes,low,no,low,low,medium,no,low,medium,lab,Technology & Programming
+business,medium,no,low,yes,high,low,high,no,low,high,office,Technology & Programming
+art,medium,yes,medium,no,low,high,high,no,high,low,hospital,Creative Arts & Design
+tech,medium,yes,high,no,high,high,high,no,low,low,studio,Technology & Programming
+business,low,no,medium,yes,high,high,medium,no,high,medium,hospital,Technology & Programming
+business,high,no,high,no,high,medium,high,no,medium,low,hospital,Technology & Programming
+science,high,yes,medium,no,high,medium,medium,yes,medium,low,hospital,Technology & Programming
+tech,low,yes,medium,yes,high,medium,high,yes,medium,high,office,Technology & Programming
+art,low,no,low,no,low,medium,high,yes,high,medium,lab,Research & Science
+business,medium,yes,high,yes,low,high,medium,yes,medium,high,office,Technology & Programming
+business,high,yes,high,yes,high,medium,low,yes,high,high,studio,Technology & Programming
+business,low,yes,medium,no,high,medium,low,yes,low,low,office,Business & Management
+tech,high,yes,high,no,low,high,high,no,medium,medium,hospital,Technology & Programming
+health,medium,no,medium,yes,medium,high,high,no,low,low,lab,Technology & Programming
+health,medium,yes,high,no,medium,medium,high,no,medium,medium,office,Business & Management
+business,high,no,medium,yes,low,low,medium,no,low,low,hospital,Technology & Programming
+business,medium,yes,low,no,low,medium,high,no,medium,low,hospital,Business & Management
+art,high,yes,medium,yes,high,medium,medium,no,low,medium,studio,Technology & Programming
+business,low,yes,low,yes,high,high,low,no,low,low,lab,Technology & Programming
+science,high,no,medium,yes,low,high,low,yes,low,high,office,Technology & Programming
+art,high,no,low,no,high,low,medium,yes,low,low,hospital,Technology & Programming
+health,low,no,high,yes,medium,low,low,no,medium,high,office,Technology & Programming
+science,low,no,high,yes,medium,high,low,yes,medium,low,studio,Technology & Programming
+business,low,no,medium,no,medium,low,high,no,low,medium,hospital,Business & Management
+business,low,yes,medium,yes,high,high,low,no,high,high,hospital,Technology & Programming
+business,high,yes,medium,no,low,low,medium,yes,low,medium,hospital,Technology & Programming
+business,medium,no,medium,no,high,low,high,no,high,low,studio,Business & Management
+science,high,yes,low,no,low,high,low,yes,low,high,studio,Technology & Programming
+health,medium,no,medium,no,low,high,low,yes,medium,high,studio,Creative Arts & Design
+science,high,no,high,no,high,medium,medium,no,high,high,hospital,Technology & Programming
+health,low,yes,medium,yes,high,high,medium,yes,low,high,studio,Technology & Programming
+art,medium,no,high,no,medium,high,medium,yes,low,high,studio,Creative Arts & Design
+health,low,yes,low,no,low,low,medium,yes,high,medium,studio,Healthcare & Wellness
+art,low,yes,low,yes,medium,high,high,no,low,low,studio,Technology & Programming
+tech,low,yes,high,no,low,high,high,yes,medium,medium,office,Technology & Programming
+business,low,yes,low,no,medium,high,low,no,high,medium,lab,Research & Science
+health,low,yes,low,no,high,medium,high,yes,high,low,lab,Research & Science
+art,medium,no,high,no,low,low,high,yes,high,high,studio,Creative Arts & Design
+health,medium,yes,high,yes,medium,medium,low,no,high,low,hospital,Technology & Programming
+business,medium,yes,medium,no,low,medium,medium,no,high,low,studio,Business & Management
+business,high,yes,high,yes,low,low,medium,yes,high,medium,hospital,Technology & Programming
+tech,medium,no,medium,yes,low,medium,medium,no,low,medium,office,Technology & Programming
+art,medium,yes,medium,no,high,low,low,yes,low,medium,lab,Research & Science
+art,low,yes,medium,no,medium,low,low,no,medium,medium,lab,Research & Science
+tech,low,no,low,yes,low,medium,high,no,low,medium,office,Technology & Programming
+art,high,yes,low,yes,high,medium,medium,no,low,high,lab,Technology & Programming
+art,medium,no,high,no,low,low,medium,yes,medium,high,office,Creative Arts & Design
+science,low,no,high,yes,low,high,low,no,medium,low,office,Technology & Programming
+health,low,yes,medium,yes,low,medium,high,yes,low,high,lab,Technology & Programming
+science,low,no,medium,no,low,medium,high,yes,high,high,studio,Research & Science
+health,low,yes,medium,yes,low,low,medium,yes,high,low,studio,Technology & Programming
+health,medium,no,medium,no,medium,high,low,no,medium,medium,hospital,Creative Arts & Design
+science,high,no,high,no,high,low,high,yes,low,low,studio,Technology & Programming
+business,high,no,high,no,medium,medium,low,yes,medium,medium,studio,Technology & Programming
+business,low,no,medium,no,low,low,low,yes,low,low,lab,Research & Science
+business,low,no,medium,no,high,medium,medium,no,low,low,office,Business & Management
+science,low,yes,high,yes,medium,high,medium,no,low,low,lab,Technology & Programming
+health,medium,yes,medium,yes,medium,high,high,yes,high,medium,studio,Technology & Programming
+tech,high,yes,high,no,high,low,medium,no,high,high,lab,Technology & Programming
+health,high,no,high,no,high,low,low,yes,high,medium,office,Technology & Programming
+business,low,yes,low,no,low,medium,low,no,medium,low,studio,Business & Management
+art,low,no,medium,yes,high,low,medium,no,medium,high,studio,Technology & Programming
+tech,low,no,medium,yes,low,low,medium,no,high,high,office,Technology & Programming
+science,high,no,medium,yes,medium,high,medium,yes,low,high,office,Technology & Programming
+science,high,yes,medium,no,medium,low,low,yes,low,high,studio,Technology & Programming
+business,high,no,low,no,low,low,low,no,low,high,lab,Technology & Programming
+art,low,yes,high,yes,high,high,low,yes,low,low,lab,Technology & Programming
+tech,low,yes,high,no,medium,low,high,yes,medium,medium,studio,Technology & Programming
+tech,medium,yes,high,yes,high,low,high,no,medium,low,studio,Technology & Programming
+health,high,yes,high,yes,low,low,high,no,medium,high,hospital,Technology & Programming
+business,high,no,low,no,medium,medium,high,yes,medium,medium,lab,Technology & Programming
+science,medium,yes,low,yes,high,low,medium,yes,high,high,studio,Technology & Programming
+health,high,yes,medium,yes,high,high,low,no,high,low,lab,Technology & Programming
+business,low,no,medium,no,low,high,low,no,medium,high,hospital,Creative Arts & Design
+business,high,no,high,no,low,high,high,yes,high,high,hospital,Technology & Programming
+health,high,yes,medium,yes,low,high,low,no,medium,high,studio,Technology & Programming
+health,medium,no,high,yes,medium,medium,low,yes,low,high,lab,Technology & Programming
+business,medium,yes,medium,yes,medium,high,low,no,medium,high,office,Technology & Programming
+art,low,no,medium,no,high,medium,low,yes,low,medium,studio,Creative Arts & Design
+tech,low,no,medium,no,low,high,low,no,high,high,office,Technology & Programming
+science,medium,yes,medium,no,high,low,medium,yes,medium,low,studio,Research & Science
+science,medium,yes,high,no,medium,high,medium,yes,low,medium,hospital,Research & Science
+science,low,yes,medium,yes,high,high,medium,no,medium,high,lab,Technology & Programming
+tech,medium,yes,low,yes,medium,low,low,no,low,low,hospital,Technology & Programming
+health,high,yes,high,no,medium,low,medium,yes,low,high,hospital,Technology & Programming
+business,medium,yes,low,no,low,high,low,yes,low,high,hospital,Creative Arts & Design
+tech,high,yes,medium,no,high,low,low,no,low,high,hospital,Technology & Programming
+health,medium,yes,medium,yes,high,high,low,no,high,medium,office,Technology & Programming
+art,medium,yes,medium,yes,low,medium,medium,no,low,low,office,Technology & Programming
+science,medium,yes,high,yes,high,high,high,no,low,medium,lab,Technology & Programming
+tech,high,no,medium,no,low,low,medium,yes,low,high,office,Technology & Programming
+health,high,yes,high,no,medium,high,medium,yes,low,low,lab,Technology & Programming
+business,low,no,high,no,medium,low,low,yes,high,high,studio,Business & Management
+tech,low,no,low,no,high,low,medium,yes,low,high,studio,Technology & Programming
+health,medium,yes,low,no,high,medium,high,no,high,low,office,Business & Management
+business,low,yes,low,yes,low,medium,low,yes,low,high,lab,Technology & Programming
+business,medium,yes,medium,yes,medium,low,medium,no,medium,medium,hospital,Technology & Programming
+business,medium,yes,low,no,medium,medium,low,yes,medium,medium,lab,Research & Science
+science,medium,no,high,yes,high,medium,medium,yes,medium,high,hospital,Technology & Programming
+art,high,yes,high,no,medium,medium,low,yes,high,medium,lab,Technology & Programming
+science,medium,yes,high,yes,medium,high,high,yes,high,medium,hospital,Technology & Programming
+business,low,no,low,no,high,low,high,no,medium,high,lab,Research & Science
+art,medium,yes,low,yes,high,low,low,no,low,high,hospital,Technology & Programming
+business,low,yes,medium,no,high,medium,high,yes,medium,low,office,Business & Management
+health,medium,yes,medium,yes,medium,high,low,yes,low,high,studio,Technology & Programming
+health,high,yes,low,yes,medium,high,low,no,low,high,studio,Technology & Programming
+health,low,no,medium,yes,low,medium,low,yes,high,low,lab,Technology & Programming
+science,high,no,medium,no,high,low,medium,no,medium,low,lab,Technology & Programming
+business,high,no,low,yes,high,low,medium,yes,low,medium,office,Technology & Programming
+business,medium,yes,high,no,high,low,medium,yes,high,high,lab,Research & Science
+science,high,yes,medium,yes,low,medium,low,yes,medium,medium,lab,Technology & Programming
+health,high,no,low,yes,high,high,low,yes,low,low,studio,Technology & Programming
+science,medium,no,low,yes,low,high,low,yes,high,low,office,Technology & Programming
+tech,medium,yes,medium,yes,low,high,medium,yes,low,high,hospital,Technology & Programming
+science,low,no,medium,yes,high,medium,low,no,high,high,lab,Technology & Programming
+art,low,yes,low,no,low,low,high,yes,high,high,office,Creative Arts & Design
+art,low,no,medium,no,medium,high,medium,yes,low,high,office,Creative Arts & Design
+tech,low,no,high,no,low,medium,high,no,low,low,lab,Technology & Programming
+science,low,yes,high,yes,high,medium,high,yes,high,low,hospital,Technology & Programming
+art,medium,no,medium,yes,high,high,low,yes,medium,low,studio,Technology & Programming
+science,low,yes,high,yes,medium,low,high,no,high,medium,office,Technology & Programming
+science,low,no,high,yes,high,high,high,yes,medium,low,lab,Technology & Programming
+art,medium,no,high,yes,high,high,medium,no,medium,medium,lab,Technology & Programming
+science,high,yes,high,yes,high,high,medium,yes,medium,high,hospital,Technology & Programming
+health,low,yes,medium,no,low,high,high,yes,low,high,lab,Research & Science
+science,low,no,medium,no,low,medium,medium,no,high,low,studio,Research & Science
+health,low,yes,high,yes,high,high,medium,yes,low,medium,studio,Technology & Programming
+science,high,yes,medium,no,high,low,medium,yes,medium,high,lab,Technology & Programming
+health,medium,yes,low,yes,low,low,low,no,low,high,hospital,Technology & Programming
+art,low,yes,high,yes,high,low,low,no,low,high,hospital,Technology & Programming
+tech,high,yes,high,no,high,low,high,yes,low,high,studio,Technology & Programming
+health,medium,yes,low,yes,high,high,low,no,low,low,hospital,Technology & Programming
+business,medium,yes,low,yes,low,high,medium,no,high,low,lab,Technology & Programming
+business,medium,yes,medium,yes,medium,medium,high,yes,high,high,office,Technology & Programming
+tech,medium,yes,medium,yes,low,medium,high,no,high,low,office,Technology & Programming
+art,medium,yes,medium,yes,medium,low,high,no,medium,low,hospital,Technology & Programming
+art,medium,yes,medium,no,high,high,low,no,low,low,hospital,Creative Arts & Design
+health,medium,no,medium,no,high,low,low,yes,low,high,lab,Research & Science
+science,high,yes,high,yes,medium,high,high,no,high,high,studio,Technology & Programming
+health,high,no,low,yes,low,low,low,no,medium,medium,lab,Technology & Programming
+health,high,yes,low,no,low,high,high,no,high,low,office,Technology & Programming
+tech,high,yes,medium,no,high,medium,medium,no,high,medium,lab,Technology & Programming
+art,low,no,high,yes,medium,high,high,no,low,medium,hospital,Technology & Programming
+business,high,no,medium,no,low,high,low,no,low,medium,lab,Technology & Programming
+tech,high,yes,low,no,low,medium,medium,yes,low,low,hospital,Technology & Programming
+art,high,no,medium,yes,low,low,low,yes,medium,low,studio,Technology & Programming
+business,high,yes,medium,yes,high,medium,high,no,low,high,lab,Technology & Programming
+art,medium,no,medium,yes,low,low,high,yes,low,high,lab,Technology & Programming
+science,low,no,low,no,medium,high,low,yes,medium,low,office,Research & Science
+art,medium,yes,medium,yes,medium,low,high,no,high,medium,studio,Technology & Programming
+health,high,yes,low,yes,low,low,low,no,low,high,studio,Technology & Programming
+tech,low,no,high,no,high,medium,low,yes,high,high,office,Technology & Programming
+art,medium,yes,medium,yes,high,high,medium,no,low,high,office,Technology & Programming
+science,medium,yes,medium,no,medium,high,low,yes,low,low,office,Research & Science
+art,low,yes,low,no,medium,high,medium,no,medium,high,hospital,Creative Arts & Design
+tech,medium,yes,low,yes,high,medium,low,no,medium,medium,hospital,Technology & Programming
+science,low,no,high,no,medium,low,low,no,high,medium,lab,Research & Science
+health,medium,no,medium,no,high,low,medium,no,medium,high,lab,Research & Science
+business,low,yes,medium,yes,low,high,medium,no,low,medium,hospital,Technology & Programming
+business,low,no,medium,yes,medium,high,medium,yes,medium,high,lab,Technology & Programming
+business,high,yes,high,yes,high,medium,low,no,high,high,hospital,Technology & Programming
+science,low,yes,medium,yes,medium,low,low,no,low,low,hospital,Technology & Programming
+art,medium,no,medium,no,medium,low,medium,yes,high,low,lab,Research & Science
+business,medium,yes,low,yes,high,low,high,yes,low,high,office,Technology & Programming
+science,high,no,medium,no,low,high,low,no,medium,medium,office,Technology & Programming
+art,high,no,low,yes,low,medium,medium,no,high,high,lab,Technology & Programming
+business,low,yes,high,yes,medium,low,low,yes,low,high,studio,Technology & Programming
+art,medium,no,medium,no,high,medium,low,no,high,high,studio,Creative Arts & Design
+business,medium,yes,low,yes,low,high,high,no,medium,medium,lab,Technology & Programming
+science,high,yes,low,no,high,low,high,yes,medium,high,office,Technology & Programming
+science,low,no,medium,yes,low,low,low,no,high,high,lab,Technology & Programming
+business,high,no,medium,no,high,high,low,yes,low,low,hospital,Technology & Programming
+tech,high,no,low,yes,medium,high,high,no,medium,high,studio,Technology & Programming
+science,low,no,low,yes,medium,low,high,yes,medium,medium,office,Technology & Programming
+science,medium,no,high,yes,high,high,high,yes,high,high,hospital,Technology & Programming
+science,high,yes,low,no,high,medium,high,no,high,low,office,Technology & Programming
+science,high,yes,low,no,medium,medium,high,yes,high,high,office,Technology & Programming
+health,low,yes,medium,no,medium,medium,low,no,medium,low,office,Healthcare & Wellness
+tech,low,no,high,yes,low,medium,high,yes,low,low,office,Technology & Programming
+tech,medium,yes,low,no,high,low,medium,no,low,low,hospital,Technology & Programming
+art,low,no,high,no,low,medium,low,yes,low,low,hospital,Creative Arts & Design
+health,low,no,low,no,high,low,high,yes,medium,low,hospital,Business & Management
+science,medium,yes,low,yes,medium,low,medium,no,high,medium,office,Technology & Programming
+art,high,yes,low,yes,medium,low,medium,yes,low,medium,office,Technology & Programming
+tech,high,no,medium,yes,medium,medium,high,no,medium,low,studio,Technology & Programming
+business,high,yes,medium,yes,low,low,medium,no,high,high,hospital,Technology & Programming
+health,medium,yes,high,yes,medium,low,low,yes,medium,medium,studio,Technology & Programming
+business,medium,no,high,no,low,low,medium,yes,medium,medium,lab,Research & Science
+tech,high,yes,high,no,low,medium,low,yes,medium,low,lab,Technology & Programming
+art,medium,no,medium,no,low,low,low,yes,low,low,office,Creative Arts & Design
+art,low,yes,low,yes,low,medium,high,no,low,high,lab,Technology & Programming
+art,medium,no,high,yes,low,low,low,yes,low,medium,office,Technology & Programming
+business,high,no,medium,yes,medium,high,low,no,low,low,studio,Technology & Programming
+business,low,yes,low,yes,high,high,low,yes,high,medium,studio,Technology & Programming
+art,high,yes,medium,no,low,high,medium,yes,high,low,lab,Technology & Programming
+health,medium,no,medium,no,medium,high,high,no,high,medium,lab,Research & Science
+health,high,yes,high,no,high,medium,low,yes,low,medium,hospital,Technology & Programming
+business,medium,no,low,yes,low,medium,low,yes,low,low,office,Technology & Programming
+art,medium,no,high,yes,high,medium,low,no,low,medium,studio,Technology & Programming
+science,low,yes,low,no,medium,medium,low,yes,high,low,hospital,Research & Science
+art,medium,no,medium,yes,low,medium,medium,yes,high,high,office,Technology & Programming
+business,medium,yes,low,no,medium,low,high,yes,medium,low,studio,Business & Management
+business,medium,no,medium,yes,high,high,high,no,medium,high,office,Technology & Programming
+art,low,yes,high,yes,high,low,low,yes,high,medium,office,Technology & Programming
+tech,low,yes,low,yes,high,medium,low,no,medium,high,studio,Technology & Programming
+tech,low,yes,low,no,high,high,medium,no,low,medium,hospital,Technology & Programming
+tech,high,yes,high,yes,medium,medium,medium,yes,low,low,hospital,Technology & Programming
+business,medium,yes,high,yes,high,low,low,yes,low,medium,office,Technology & Programming
+art,medium,no,medium,yes,high,low,high,no,high,high,hospital,Technology & Programming
+science,medium,no,medium,no,medium,low,high,no,medium,medium,studio,Research & Science
+tech,high,no,low,yes,medium,high,low,no,high,high,hospital,Technology & Programming
+business,medium,no,medium,no,medium,medium,high,no,medium,medium,lab,Research & Science
+tech,low,yes,high,yes,high,high,high,no,low,medium,hospital,Technology & Programming
+business,high,no,medium,yes,low,medium,medium,no,high,high,hospital,Technology & Programming
+tech,medium,yes,medium,no,low,high,low,yes,low,low,office,Technology & Programming
+business,low,yes,high,no,medium,high,medium,yes,high,low,office,Creative Arts & Design
+business,high,no,low,yes,low,high,high,no,high,high,studio,Technology & Programming
+art,medium,yes,low,no,low,medium,medium,yes,medium,medium,studio,Creative Arts & Design
+science,low,yes,low,yes,low,high,medium,no,high,medium,hospital,Technology & Programming
+science,low,yes,low,no,low,low,high,no,low,medium,studio,Research & Science
+health,medium,yes,high,no,medium,medium,medium,yes,medium,high,hospital,Healthcare & Wellness
+business,medium,yes,high,no,medium,high,medium,yes,high,high,hospital,Creative Arts & Design
+science,low,no,medium,no,medium,high,low,no,low,high,office,Research & Science
+health,low,no,high,no,high,high,medium,no,high,high,office,Creative Arts & Design
+business,low,yes,high,no,high,medium,low,no,high,medium,office,Business & Management
+science,medium,no,high,yes,high,medium,high,no,high,medium,office,Technology & Programming
+business,medium,yes,medium,yes,medium,low,medium,no,high,medium,studio,Technology & Programming
+science,medium,yes,low,yes,low,medium,low,no,high,high,office,Technology & Programming
+art,high,no,low,no,high,medium,medium,no,high,medium,hospital,Technology & Programming
+business,high,yes,high,no,high,medium,high,no,high,high,lab,Technology & Programming
+art,medium,yes,medium,yes,low,low,high,no,low,medium,studio,Technology & Programming
+art,low,no,low,no,high,high,low,yes,high,medium,hospital,Creative Arts & Design
+business,medium,yes,high,no,high,high,high,no,low,high,office,Creative Arts & Design
+business,medium,yes,low,no,high,high,low,yes,medium,high,studio,Creative Arts & Design
+business,low,yes,low,no,low,low,high,no,medium,low,lab,Research & Science
+health,medium,yes,high,yes,medium,medium,medium,yes,high,medium,lab,Technology & Programming
+science,high,yes,medium,yes,high,medium,high,yes,low,low,office,Technology & Programming
+health,high,yes,low,no,medium,high,low,no,high,medium,office,Technology & Programming
+health,low,yes,medium,yes,low,high,medium,no,high,low,office,Technology & Programming
+art,low,no,high,no,high,medium,medium,no,medium,high,hospital,Creative Arts & Design
+science,low,no,medium,yes,medium,high,medium,no,medium,medium,hospital,Technology & Programming
+art,high,no,medium,no,low,low,low,no,low,high,lab,Technology & Programming
+science,low,no,low,yes,low,medium,medium,yes,medium,high,studio,Technology & Programming
+health,low,no,medium,yes,high,medium,low,yes,low,high,hospital,Technology & Programming
+health,medium,no,low,no,medium,low,low,no,high,medium,hospital,Healthcare & Wellness
+tech,medium,no,high,no,low,low,medium,yes,medium,medium,office,Technology & Programming
+science,low,yes,medium,yes,low,low,high,yes,high,high,hospital,Technology & Programming
+science,low,no,high,no,high,high,medium,yes,medium,high,hospital,Research & Science
+business,low,no,low,no,medium,medium,high,no,low,high,hospital,Business & Management
+health,medium,yes,medium,no,high,high,medium,yes,medium,high,hospital,Creative Arts & Design
+art,low,no,low,no,low,high,medium,yes,high,high,hospital,Creative Arts & Design
+health,low,yes,low,yes,high,high,medium,yes,medium,medium,studio,Technology & Programming
+health,low,yes,low,no,low,high,low,no,low,low,office,Creative Arts & Design
+art,medium,no,medium,no,medium,high,low,no,medium,high,hospital,Creative Arts & Design
+tech,medium,no,medium,yes,low,medium,low,no,low,low,lab,Technology & Programming
+health,high,no,medium,no,medium,low,high,no,high,medium,studio,Technology & Programming
+science,high,no,medium,no,medium,low,high,no,low,low,office,Technology & Programming
+tech,high,no,low,no,high,high,low,no,medium,high,hospital,Technology & Programming
+science,low,no,low,yes,high,high,high,no,high,high,hospital,Technology & Programming
+tech,low,no,medium,no,medium,medium,high,yes,low,medium,studio,Technology & Programming
+business,high,no,medium,no,low,high,medium,no,low,high,office,Technology & Programming
+tech,low,no,high,no,high,low,medium,yes,high,medium,lab,Technology & Programming
+tech,medium,yes,low,no,low,high,low,yes,high,medium,lab,Technology & Programming
+business,medium,no,low,yes,low,high,low,yes,medium,high,hospital,Technology & Programming
+tech,high,no,high,no,high,low,high,yes,medium,medium,office,Technology & Programming
+science,low,yes,medium,no,medium,low,low,yes,medium,low,office,Research & Science
+science,medium,no,high,yes,low,medium,low,no,high,high,studio,Technology & Programming
+science,low,yes,medium,no,medium,high,low,no,low,medium,studio,Research & Science
+tech,high,yes,low,no,high,low,low,yes,high,low,studio,Technology & Programming
+art,high,yes,low,no,high,medium,medium,no,medium,low,studio,Technology & Programming
+business,low,yes,low,no,medium,medium,medium,yes,low,high,office,Business & Management
+science,low,no,low,no,medium,low,low,no,medium,medium,studio,Research & Science
+tech,low,yes,high,no,medium,high,medium,no,medium,high,hospital,Technology & Programming
+health,low,yes,low,no,low,low,high,no,high,medium,office,Business & Management
+health,low,yes,low,no,high,medium,low,yes,medium,low,hospital,Healthcare & Wellness
+health,low,no,high,no,high,high,low,no,high,medium,hospital,Creative Arts & Design
+health,low,yes,low,no,medium,medium,low,no,high,low,office,Healthcare & Wellness
+art,high,yes,medium,yes,medium,low,low,yes,high,medium,office,Technology & Programming
+tech,medium,yes,low,no,medium,medium,medium,no,high,low,lab,Technology & Programming
+tech,low,no,low,no,medium,high,high,no,low,low,lab,Technology & Programming
+art,high,yes,low,no,medium,low,low,no,low,medium,hospital,Technology & Programming
+science,medium,no,medium,yes,low,high,low,yes,high,medium,lab,Technology & Programming
+business,low,yes,high,no,medium,medium,high,no,high,high,office,Business & Management
+business,high,yes,medium,no,high,medium,high,no,high,high,office,Technology & Programming
+art,medium,no,high,no,medium,high,medium,no,low,low,lab,Research & Science
+business,medium,yes,high,no,high,high,medium,yes,high,medium,lab,Research & Science
+art,low,yes,high,yes,high,high,low,yes,low,low,studio,Technology & Programming
+health,low,no,medium,no,medium,high,medium,no,low,medium,lab,Research & Science
+health,low,yes,medium,no,medium,low,high,no,medium,medium,office,Business & Management
+business,high,yes,low,no,low,medium,high,yes,high,low,office,Technology & Programming
+tech,low,no,low,yes,high,high,high,no,high,high,hospital,Technology & Programming
+science,high,no,low,yes,medium,low,medium,yes,low,medium,studio,Technology & Programming
+health,medium,no,low,yes,low,high,medium,yes,low,medium,lab,Technology & Programming
+art,high,yes,high,yes,high,high,low,yes,low,low,studio,Technology & Programming
+health,low,yes,high,yes,low,low,low,no,high,low,office,Technology & Programming
+science,high,yes,high,no,medium,low,medium,no,low,high,lab,Technology & Programming
+tech,low,yes,high,no,low,high,high,no,high,high,office,Technology & Programming
+tech,high,yes,medium,yes,medium,high,medium,no,medium,low,hospital,Technology & Programming
+tech,medium,yes,high,yes,low,medium,low,yes,low,medium,office,Technology & Programming
+art,high,no,low,no,medium,low,medium,yes,low,low,lab,Technology & Programming
+tech,high,yes,high,no,low,low,medium,yes,high,low,lab,Technology & Programming
+business,high,no,high,yes,medium,medium,medium,no,medium,medium,studio,Technology & Programming
+health,medium,no,low,no,low,medium,medium,yes,high,high,lab,Research & Science
+tech,high,yes,low,yes,low,medium,low,yes,medium,high,lab,Technology & Programming
+art,high,no,low,no,low,high,high,no,low,low,hospital,Technology & Programming
+art,high,no,high,no,high,low,medium,yes,low,low,office,Technology & Programming
+tech,medium,no,high,yes,high,low,low,no,medium,low,studio,Technology & Programming
+business,high,no,high,no,high,medium,high,no,medium,high,studio,Technology & Programming
+art,low,no,high,no,low,low,medium,no,low,high,studio,Creative Arts & Design
+art,high,no,medium,no,low,low,medium,yes,high,high,studio,Technology & Programming
+business,low,yes,low,yes,medium,high,low,no,low,high,office,Technology & Programming
+science,medium,yes,high,no,high,high,medium,no,medium,high,studio,Research & Science
+art,high,yes,medium,no,medium,high,high,yes,high,high,studio,Technology & Programming
+tech,high,yes,low,yes,low,high,medium,yes,high,low,lab,Technology & Programming
+tech,high,no,medium,yes,low,medium,high,no,low,medium,lab,Technology & Programming
+tech,medium,no,high,no,low,high,low,yes,medium,high,hospital,Technology & Programming
+science,low,no,low,yes,low,low,low,no,low,low,office,Technology & Programming
+health,medium,yes,low,yes,high,low,high,no,high,high,studio,Technology & Programming
+art,low,yes,medium,yes,medium,low,medium,no,low,medium,hospital,Technology & Programming
+health,low,no,high,yes,low,medium,high,yes,low,low,lab,Technology & Programming
+science,low,yes,medium,yes,low,low,low,yes,medium,medium,studio,Technology & Programming
+business,medium,yes,high,yes,medium,medium,medium,yes,low,medium,hospital,Technology & Programming
+business,high,no,high,no,high,low,high,no,high,medium,studio,Technology & Programming
+science,high,no,high,yes,low,low,low,no,low,medium,studio,Technology & Programming
+health,low,no,medium,yes,high,low,low,yes,low,high,office,Technology & Programming
+science,medium,no,high,no,high,low,medium,no,low,high,lab,Research & Science
+business,low,no,high,no,high,low,medium,no,medium,high,hospital,Business & Management
+health,high,no,high,yes,medium,medium,medium,no,high,high,hospital,Technology & Programming
+tech,low,yes,high,no,medium,high,low,yes,high,medium,hospital,Technology & Programming
+business,low,no,medium,yes,high,high,low,no,low,medium,office,Technology & Programming
+art,low,no,medium,no,medium,high,high,no,medium,high,office,Creative Arts & Design
+science,medium,no,medium,no,high,low,medium,no,low,high,lab,Research & Science
+art,high,no,high,no,high,low,low,no,low,high,studio,Technology & Programming
+science,low,yes,high,no,medium,medium,medium,yes,high,low,lab,Research & Science
+health,high,no,high,no,high,high,medium,yes,high,medium,studio,Technology & Programming
+business,low,yes,low,yes,low,medium,medium,no,low,high,hospital,Technology & Programming
+tech,high,no,medium,yes,high,medium,high,yes,medium,high,hospital,Technology & Programming
+science,high,no,medium,no,high,high,medium,no,high,high,hospital,Technology & Programming
+science,medium,no,medium,no,medium,low,medium,no,high,medium,hospital,Research & Science
+business,medium,yes,high,yes,high,high,medium,no,medium,high,office,Technology & Programming
+business,high,yes,medium,yes,high,high,high,yes,low,high,studio,Technology & Programming
+health,medium,no,low,yes,low,low,medium,no,low,high,lab,Technology & Programming
+art,high,yes,medium,no,low,medium,high,yes,low,medium,studio,Technology & Programming
+health,medium,yes,high,no,low,high,high,yes,high,high,studio,Creative Arts & Design
+business,medium,no,low,no,low,low,low,no,high,high,hospital,Business & Management
+science,high,no,high,yes,low,high,medium,no,medium,low,hospital,Technology & Programming
+art,medium,no,low,yes,high,low,medium,yes,high,high,studio,Technology & Programming
+science,high,yes,medium,no,low,low,high,no,medium,high,hospital,Technology & Programming
+tech,medium,yes,medium,yes,medium,medium,medium,yes,medium,low,hospital,Technology & Programming
+science,low,yes,medium,yes,medium,medium,medium,yes,high,low,studio,Technology & Programming
+business,high,no,medium,yes,low,medium,medium,yes,medium,low,lab,Technology & Programming
+business,high,yes,medium,no,medium,medium,low,yes,low,high,lab,Technology & Programming
+business,high,no,medium,yes,medium,low,medium,no,medium,high,office,Technology & Programming
+science,low,yes,high,no,low,high,high,yes,high,high,studio,Research & Science
+tech,low,no,low,no,high,high,medium,no,medium,low,hospital,Technology & Programming
+tech,medium,yes,low,yes,high,medium,low,yes,low,low,lab,Technology & Programming
+science,medium,yes,low,no,high,high,high,yes,medium,medium,studio,Research & Science
+art,high,no,high,yes,high,high,medium,yes,medium,low,hospital,Technology & Programming
+health,high,no,medium,no,low,high,medium,yes,medium,low,studio,Technology & Programming
+tech,low,no,low,yes,low,high,medium,yes,low,medium,office,Technology & Programming
+business,low,no,low,yes,high,medium,medium,yes,low,low,studio,Technology & Programming
+tech,low,no,medium,no,high,high,high,yes,high,high,lab,Technology & Programming
+art,high,yes,high,no,medium,medium,high,no,high,high,office,Technology & Programming
+tech,medium,no,high,no,high,low,medium,yes,high,high,studio,Technology & Programming
+science,low,yes,high,yes,low,high,low,no,medium,medium,lab,Technology & Programming
+health,medium,no,low,no,high,high,high,no,low,high,hospital,Creative Arts & Design
+science,high,no,high,yes,medium,low,medium,no,low,medium,office,Technology & Programming
+business,medium,yes,medium,no,low,medium,low,no,high,high,hospital,Business & Management
+science,low,no,high,yes,high,high,high,no,low,medium,studio,Technology & Programming
+tech,medium,yes,high,no,medium,low,medium,no,low,low,studio,Technology & Programming
+science,high,no,low,yes,low,low,medium,no,high,medium,studio,Technology & Programming
+art,medium,no,high,no,high,medium,low,yes,high,low,lab,Research & Science
+health,low,no,high,no,high,medium,high,yes,low,high,hospital,Business & Management
+health,high,no,high,no,medium,medium,low,yes,high,low,hospital,Technology & Programming
+art,low,yes,low,yes,low,medium,high,yes,medium,medium,lab,Technology & Programming
+health,medium,no,medium,no,medium,low,medium,no,medium,medium,lab,Research & Science
+science,low,no,high,yes,high,high,medium,yes,medium,low,hospital,Technology & Programming
+art,high,no,high,yes,high,medium,medium,yes,low,high,lab,Technology & Programming
+art,low,yes,high,yes,medium,medium,low,yes,low,medium,office,Technology & Programming
+science,medium,yes,high,yes,low,low,high,yes,medium,low,studio,Technology & Programming
+science,low,yes,high,no,medium,low,high,no,low,medium,studio,Research & Science
+science,low,no,medium,yes,high,low,high,no,high,high,studio,Technology & Programming
+tech,medium,yes,medium,yes,medium,low,medium,no,low,medium,lab,Technology & Programming
+business,low,yes,medium,no,medium,low,high,no,low,medium,lab,Research & Science
+tech,medium,yes,medium,yes,medium,high,low,no,high,low,office,Technology & Programming
+business,medium,yes,low,no,medium,low,low,yes,medium,low,studio,Business & Management
+business,high,yes,medium,yes,high,medium,low,yes,high,low,hospital,Technology & Programming
+business,high,yes,high,yes,medium,high,high,no,low,medium,hospital,Technology & Programming
+science,medium,yes,high,yes,medium,low,low,no,medium,medium,lab,Technology & Programming
+science,high,yes,high,no,high,low,medium,yes,medium,low,lab,Technology & Programming
+business,low,no,high,yes,high,low,medium,yes,high,low,hospital,Technology & Programming
+science,medium,yes,medium,no,medium,low,low,no,high,high,studio,Research & Science
+art,high,yes,high,yes,low,high,medium,no,low,low,lab,Technology & Programming
+tech,high,no,low,no,low,medium,low,yes,medium,high,lab,Technology & Programming
+art,low,yes,high,no,low,medium,high,yes,medium,low,hospital,Creative Arts & Design
+business,medium,no,high,yes,medium,low,low,yes,high,medium,hospital,Technology & Programming
+tech,medium,yes,medium,no,low,low,medium,no,medium,medium,hospital,Technology & Programming
+health,high,no,low,no,low,low,high,no,low,medium,studio,Technology & Programming
+business,low,no,high,no,high,high,low,yes,low,medium,studio,Creative Arts & Design
+art,high,no,low,no,medium,medium,low,yes,high,high,hospital,Technology & Programming
+health,low,yes,medium,yes,medium,high,medium,yes,low,medium,hospital,Technology & Programming
+art,high,yes,low,yes,low,low,low,yes,low,low,office,Technology & Programming
+tech,low,yes,high,yes,high,low,low,yes,high,low,studio,Technology & Programming
+science,high,no,medium,yes,low,high,low,yes,medium,medium,lab,Technology & Programming
+tech,high,yes,high,yes,medium,low,medium,no,high,medium,office,Technology & Programming
+art,medium,yes,high,yes,low,high,low,no,low,low,hospital,Technology & Programming
+tech,high,no,medium,no,low,low,low,yes,low,low,office,Technology & Programming
+tech,high,no,medium,no,medium,high,medium,no,low,low,lab,Technology & Programming
+health,medium,yes,low,yes,high,high,low,no,high,high,office,Technology & Programming
+art,low,no,low,yes,low,low,high,yes,medium,low,hospital,Technology & Programming
+business,high,no,low,yes,medium,medium,high,yes,high,high,hospital,Technology & Programming
+science,high,yes,low,yes,high,medium,medium,yes,high,high,studio,Technology & Programming
+science,medium,no,high,yes,low,low,medium,yes,low,low,hospital,Technology & Programming
+science,medium,no,low,yes,high,medium,high,no,low,medium,office,Technology & Programming
+art,high,no,medium,yes,high,low,high,no,high,low,office,Technology & Programming
+business,medium,yes,low,no,high,high,medium,no,medium,low,hospital,Creative Arts & Design
+science,high,yes,low,no,high,medium,low,yes,medium,medium,studio,Technology & Programming
+health,high,yes,medium,no,low,medium,medium,yes,low,low,office,Technology & Programming
+art,medium,no,medium,yes,low,medium,low,yes,low,low,hospital,Technology & Programming
+business,low,no,medium,no,high,high,medium,yes,high,medium,lab,Research & Science
+business,low,no,medium,no,medium,medium,low,yes,medium,medium,office,Business & Management
+business,high,yes,low,yes,low,low,high,yes,medium,high,studio,Technology & Programming
+tech,medium,yes,medium,no,low,low,medium,yes,medium,low,lab,Technology & Programming
+science,medium,no,medium,no,medium,medium,medium,no,medium,low,office,Research & Science
+business,low,yes,low,no,high,medium,medium,no,medium,low,office,Business & Management
+tech,high,yes,high,yes,high,medium,high,yes,high,low,hospital,Technology & Programming
+art,low,no,low,no,low,medium,medium,yes,low,medium,studio,Creative Arts & Design
+health,low,no,medium,no,high,high,medium,no,medium,medium,office,Creative Arts & Design
+science,high,no,high,yes,low,low,high,no,medium,high,studio,Technology & Programming
+business,high,no,low,yes,medium,low,medium,yes,medium,high,hospital,Technology & Programming
+business,high,yes,low,yes,low,high,medium,no,low,medium,studio,Technology & Programming
+business,medium,no,medium,yes,low,high,high,no,medium,low,lab,Technology & Programming
+business,high,yes,low,yes,medium,low,high,yes,low,low,studio,Technology & Programming
+art,low,no,low,yes,high,medium,medium,yes,medium,medium,office,Technology & Programming
+health,low,no,low,no,low,medium,medium,no,medium,high,lab,Research & Science
+tech,low,no,medium,yes,high,high,medium,no,high,high,office,Technology & Programming
+science,medium,yes,medium,yes,high,high,medium,yes,high,medium,lab,Technology & Programming
+art,medium,yes,high,yes,high,medium,high,yes,low,high,office,Technology & Programming
+health,low,no,high,yes,low,medium,medium,yes,high,high,studio,Technology & Programming
+art,low,yes,medium,no,low,high,medium,no,low,low,studio,Creative Arts & Design
+health,low,yes,low,no,medium,low,low,no,low,high,lab,Research & Science
+art,medium,yes,high,no,low,high,low,no,high,medium,hospital,Creative Arts & Design
+health,low,yes,high,yes,low,low,medium,yes,high,low,office,Technology & Programming
+science,low,yes,low,yes,low,high,medium,yes,medium,medium,office,Technology & Programming
+tech,low,no,high,yes,low,high,medium,no,high,low,lab,Technology & Programming
+tech,low,no,medium,no,high,medium,high,yes,low,medium,hospital,Technology & Programming
+science,medium,yes,low,no,high,medium,low,no,low,high,studio,Research & Science
+business,low,no,low,no,medium,high,medium,yes,medium,low,office,Creative Arts & Design
+health,high,yes,low,yes,medium,medium,high,no,high,medium,office,Technology & Programming
+tech,low,no,medium,yes,medium,medium,medium,no,high,medium,lab,Technology & Programming
+science,medium,yes,high,yes,medium,high,low,no,low,high,hospital,Technology & Programming
+art,low,yes,high,no,medium,medium,low,no,high,high,lab,Research & Science
+science,low,yes,low,yes,high,medium,medium,no,high,medium,lab,Technology & Programming
+health,high,no,high,yes,medium,high,medium,yes,high,low,lab,Technology & Programming
+science,high,no,low,no,high,low,medium,no,low,high,office,Technology & Programming
+health,low,yes,low,yes,low,medium,medium,yes,low,low,hospital,Technology & Programming
+science,low,no,high,yes,low,high,high,yes,medium,low,office,Technology & Programming
+tech,medium,no,low,yes,high,high,high,yes,high,high,office,Technology & Programming
+science,medium,yes,medium,no,high,low,medium,no,medium,high,lab,Research & Science
+health,low,yes,low,yes,low,medium,low,no,low,high,hospital,Technology & Programming
+business,low,no,medium,no,high,medium,high,no,medium,low,office,Business & Management
+business,low,no,low,no,medium,high,medium,no,medium,high,hospital,Creative Arts & Design
+health,high,no,low,yes,medium,low,low,yes,low,medium,studio,Technology & Programming
+science,medium,no,low,yes,high,high,medium,no,low,medium,studio,Technology & Programming
+art,low,no,high,no,low,high,low,no,low,low,hospital,Creative Arts & Design
+health,high,no,medium,yes,medium,medium,medium,yes,low,high,studio,Technology & Programming
+tech,high,no,low,no,medium,low,medium,no,low,high,studio,Technology & Programming
+art,medium,yes,medium,no,low,low,high,yes,high,high,studio,Creative Arts & Design
+art,low,yes,medium,no,low,low,high,yes,high,medium,hospital,Creative Arts & Design
+art,medium,yes,medium,no,low,high,high,yes,low,low,office,Creative Arts & Design
+business,medium,no,medium,yes,medium,medium,low,yes,medium,medium,lab,Technology & Programming
+health,high,no,high,no,low,medium,medium,yes,low,high,studio,Technology & Programming
+art,medium,yes,high,no,medium,low,high,no,medium,medium,lab,Research & Science
+science,low,no,medium,yes,medium,medium,low,no,medium,medium,hospital,Technology & Programming
+art,medium,no,high,no,low,high,low,yes,medium,high,studio,Creative Arts & Design
+tech,low,no,low,yes,medium,high,medium,no,medium,low,office,Technology & Programming
+business,high,yes,medium,no,high,low,medium,yes,low,high,lab,Technology & Programming
+health,medium,yes,low,no,medium,low,low,yes,medium,high,studio,Healthcare & Wellness
+business,low,no,medium,no,high,low,medium,yes,medium,high,studio,Business & Management
+science,low,no,low,no,high,medium,medium,yes,medium,low,lab,Research & Science
+science,medium,no,low,yes,low,medium,low,yes,high,medium,lab,Technology & Programming
+art,low,yes,medium,no,low,medium,low,yes,low,high,studio,Creative Arts & Design
+business,medium,yes,medium,no,high,low,medium,yes,high,medium,office,Business & Management
+tech,high,yes,medium,no,low,high,medium,yes,medium,low,studio,Technology & Programming
+art,low,no,high,no,high,medium,high,no,medium,high,studio,Creative Arts & Design
+science,low,no,low,yes,high,low,high,no,high,medium,studio,Technology & Programming
+art,high,no,high,no,high,high,low,no,low,low,hospital,Technology & Programming
+business,low,no,medium,yes,high,high,high,no,medium,low,office,Technology & Programming
+tech,medium,no,high,yes,high,low,low,yes,low,high,hospital,Technology & Programming
+health,high,yes,high,yes,medium,medium,high,no,low,low,hospital,Technology & Programming
+tech,low,yes,high,no,high,medium,low,no,high,medium,lab,Technology & Programming
+science,high,yes,high,yes,high,high,high,yes,low,high,office,Technology & Programming
+art,medium,no,high,yes,low,low,low,no,medium,high,lab,Technology & Programming
+science,medium,no,low,yes,high,low,high,no,medium,high,studio,Technology & Programming
+art,low,no,medium,no,low,medium,high,yes,low,low,hospital,Creative Arts & Design
+health,low,no,high,no,medium,high,low,yes,low,high,lab,Research & Science
+art,high,yes,high,no,high,low,medium,yes,high,low,studio,Technology & Programming
+art,low,no,high,yes,low,medium,low,no,high,high,office,Technology & Programming
+health,low,no,medium,yes,high,high,low,no,medium,high,lab,Technology & Programming
+tech,low,no,high,no,low,low,medium,no,low,high,hospital,Technology & Programming
+science,high,yes,high,yes,high,low,low,no,medium,low,lab,Technology & Programming
+art,medium,yes,high,yes,low,high,high,yes,high,medium,hospital,Technology & Programming
+tech,high,no,low,yes,low,high,high,yes,low,low,studio,Technology & Programming
+science,medium,yes,low,no,low,medium,low,no,high,high,hospital,Research & Science
+health,low,no,medium,yes,high,low,high,yes,medium,high,lab,Technology & Programming
+health,medium,yes,medium,no,medium,low,low,yes,medium,medium,studio,Healthcare & Wellness
+tech,medium,no,medium,yes,low,low,low,yes,low,medium,lab,Technology & Programming
+health,high,no,low,yes,medium,high,high,yes,medium,high,office,Technology & Programming
+health,high,yes,low,yes,low,medium,low,no,medium,high,lab,Technology & Programming

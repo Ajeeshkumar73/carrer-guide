@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Career Guidance</title>
+ <link rel="icon" href="{% static 'images/favicon-1.png' %}" sizes="256x256" type="image/png">
+
+    <title>LearnLoop-AI career Assistant</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -185,7 +187,80 @@
   line-height: 1.6;
 }
 
+.stylish-button {
+  /* Basic Link Styling */
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* White text (CHANGED) */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 
+  /* Button Shape and Size */
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 30px;
+
+  /* Background and Shadow */
+  background-color: #000; /* Black background (CHANGED) */
+  border: 1px solid #000; /* Keep border black or remove it */
+
+  /* Transition for hover effect */
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+/* External Link Icon Styling */
+.external-icon {
+  margin-left: 8px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+
+  /* Icon is now White (CHANGED SVG FILL COLOR) */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23ffffff" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h7.136a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 0 .708l-5.5 5.5a.5.5 0 1 1-.708-.708l5.5-5.5a.5.5 0 0 1 .708 0z"/><path fill-rule="evenodd" d="M14.5 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V1H12a.5.5 0 0 1 0-1h2.5z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+ /* --- Cards (Feature, Career, Testimonial) --- */
+    .card-custom {
+      background: var(--card-bg-light);
+      border: none;
+      border-radius: 16px;
+      padding: 35px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+    body.dark-mode .card-custom {
+      background: var(--card-bg-dark);
+      border: 1px solid var(--border-dark);
+    }
+    .card-custom:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+    .icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    /* --- Specific Sections --- */
+    #trusted-by .logos img {
+        max-height: 40px;
+        filter: grayscale(100%);
+        opacity: 0.6;
+        transition: all 0.3s ease;
+    }
+    #trusted-by .logos img:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
 </style>
 </head>
 <body>
@@ -198,109 +273,41 @@
 
 
     <!-- Navbar -->
-    <div class="relative w-full flex justify-between items-center px-12 py-6 z-10">
-      <div class="text-lg font-semibold tracking-widest">CAREERGUIDE</div>
+    <div class="relative w-full flex justify-between items-center px-12 py-6 z-10"  >
+      <div class="flex items-center space-x-3 font-semibold tracking-widest">
+  <span class="text-lg" style="margin-left:-25px">LEARNLOOP</span>
+</div>
+
       <nav class="flex items-center space-x-8 text-sm font-medium" style="margin-right: 70px;">
+    <a href="" class="hover:text-blue-600">Find career Domain</a>
     <a href="#how-it-works" class="hover:text-blue-600">How It Works</a>
-    <!--<a href="#review" class="hover:text-blue-600">Reviews</a>-->
     <a href="#about" class="hover:text-blue-600">About</a>
         <!--<button class="btn-subscribe" onclick="openPopup()">Sign in</button>-->
       </nav>
     </div>
 
-    {% if messages %}
-  <div class="fixed top-5 right-5 z-50 space-y-2">
-    {% for message in messages %}
-      <div class="flex items-center justify-between px-4 py-3 rounded-lg shadow-lg text-white animate-slide-in
-                  {% if message.tags == 'success' %} bg-green-600
-                  {% elif message.tags == 'error' %} bg-red-600
-                  {% else %} bg-gray-800 {% endif %}">
-        <span>{{ message }}</span>
-        <button class="ml-3 text-xl leading-none focus:outline-none close-btn">&times;</button>
-      </div>
-    {% endfor %}
-  </div>
-{% endif %}
-
     <!-- Hero Text -->
     <div class="relative flex flex-col justify-center items-center text-center flex-1 px-6 z-10">
       
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-light tracking-wide leading-tight mb-6">
-        THE FUTURE OF<br />CAREER GUIDANCE IS HERE
+        YOUR AI CAREER<br />VOICE ASSISTANT IS HERE
       </h1>
       <p class="text-gray-200 text-lg sm:text-xl max-w-2xl mx-auto mb-12 font-normal">
-        Discover personalized career pathways, expert mentorship, and the skills you need to succeed in your dream profession.
+       Clear your doubts about education and career paths, explore personalized career domains like IT, Teaching, Medicine, and more, and get guidance to reach the next level with ease.
       </p>
     <!-- Buttons container (flex row) -->
     <div class="flex items-center space-x-4">
       <!-- Let's Start Button -->
-        <a href="{% url 'predict_page' %}">
-        <button class="px-8 py-3 text-lg bg-black hover:bg-blue-600 text-white" style="border-radius:5px;
-      border-radius: 5px;
-     padding: 12px 24px;
-      font-style: italic;
-      font-weight: 100;
-     ">Try CareerGuide</button>
-        </a>
 
-      <!-- 🎤 Mic Button (right of Let's Start) -->
-        <a href="{% url 'assistant' %}">
-      <button
-        id="mic-btn"
-        class="bg-black hover:bg-blue-600 text-white rounded-full p-4 shadow-lg transition transform hover:scale-105 focus:outline-none"
-        title="Start Voice Input"
-      >
-        <!-- Mic SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/>
-          <path d="M19 11a1 1 0 0 0-2 0 5 5 0 0 1-10 0 1 1 0 0 0-2 0 7 7 0 0 0 6 6.93V21H9a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2h-2v-3.07A7 7 0 0 0 19 11z"/>
-        </svg>
-      </button></a>
+  <a href="{% url 'assistant' %}" class="stylish-button">
+  Try Leanloop
+  <span class="external-icon"></span>
+</a>
+</a>
     </div>
      
     </div>
     
-  </section>
-
-    <!-- Auth Section -->
-  <section id="authSection" class="hidden">
-    
-    <!--login-->
-  <div class="auth-popup" id="authPopup">
-    <button class="close-btn" type="button" onclick="closePopup()" aria-label="Close">X</button>
-    
-    <div id="loginForm" class="slide-in">
-      <h3>SIGN IN</h3>
-      <p>Sign in to Career Guide.</p></br>
-      <form method="POST" action="{% url 'login' %}">
-        {% csrf_token %}
-        <label class="email-label" for="email">Email </label> 
-        <label class="user-label" for="password">Password </label></br>
-
-        <input type="email" id="email" name="email" required placeholder="Enter your email" />
-        <input type="password" id="password" name="password" required placeholder="Enter your password" />
-        <button type="submit">Sign in</button></br></br>
-        <span class="toggle-link" onclick="toggleForms('register')">Don't have an account? Register</span>
-      </form>
-    </div>
-
-    <div id="registerForm" style="display:none;">
-      <h3>SIGN UP</h3>
-      <p>Sign up to Career Guide.</p></br>
-      <form method="POST" action="{% url 'register' %}">
-          {% csrf_token %}
-        <label class="email-label" for="regEmail">Email </label> 
-        <label class="user-label" for="regUsername">Username </label>
-        <label class="pass-label" for="regPassword">Password </label></br>
-        <input type="email" id="regEmail" name="email" required placeholder="Enter your email" />
-        <input type="text" id="regUsername" name="username" required placeholder="Enter your username" />
-        <input type="password" id="regPassword" name="password" required placeholder="Enter your password" />
-        <button type="submit">Sign up</button></br></br>
-        <span class="toggle-link" onclick="toggleForms('login')">Already have an account? Sign In</span>
-      </form>
-    </div>
-  </div>
-
   </section>
 
 
@@ -310,53 +317,49 @@
   <i class="bi bi-arrow-up"></i>
 </button>
 
-
   <!-- About 1 -->
   <div class="about" id="about">
     <section class="about-section" aria-label="About CareerPath" >
       <div class="about-text">
         <div class="label">About</div>
-        <div class="title">CareerPath—Discover Your Ideal Career Journey</div>
+        <div class="title">CareerPath—Your AI Voice Guide to the Right Career</div>
         <div class="description">
-          Our platform helps students choose the right career path with confidence.
-          It analyzes academic performance, personal interests, and skills to recommend
-          suitable fields like engineering, medicine, design, or management. 
+         Our AI-powered platform helps students explore and choose the career path that best fits their skills, interests, and goals. 
+  Whether they are unsure about their domain or looking to advance to higher studies, the assistant provides personalized guidance to make informed decisions.
 
-          Students get personalized career suggestions after key milestones such as +2 or
-          undergraduate studies. They can also connect with communities to share resources,
-          learn from experts, and explore new opportunities.
+  Students can discover suitable career fields such as IT, teaching, medicine, design, or management. 
+  They receive tailored suggestions based on their preferences, academic background, and aspirations.
 
-          With a built-in AI voice assistant, users enjoy hands-free support that guides them
-          through career options, educational needs, job prospects, and skill development paths.
+  With a built-in AI voice assistant, users can ask career-related questions, get instant advice, and explore education and skill development options hands-free, making career planning easy and interactive.
         </div>
       </div>
       <!--<img src="{% static 'images/career2.jpg' %}" alt="Career Path illustration" class="about-image" loading="lazy"/>-->
     </section>
   </div>
 
-  <section class="py-5" id="how-it-works" style="height:600px; background-color:black;">
+ <section class="py-5" id="how-it-works" style="height:600px; background-color:black;">
   <div class="container">
     <div class="text-center" data-aos="fade-up">
-        <h1 style="color:white;">Your Journey in 3 Simple Steps</h1>
-        <p class="lead section-subtitle mb-5">Clarity is closer than you think.</p>
+        <h1 style="color:white;">Your Career Journey in 3 Simple Steps</h1>
+        <p class="lead section-subtitle mb-5">Find clarity and explore your future with ease.</p>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-8" data-aos="fade-up" style="margin-left:200px;">
             <div class="timeline">
                 <div class="timeline-step" data-aos="fade-right">
                     <div class="timeline-icon">1</div>
-                    <h5>Take the 5-Minute Quiz</h5>
-                    <p class="text-muted">Our interactive assessment quickly understands your core traits, skills, and aspirations. No resumes needed.</p>
+                    <h5>Ask Your Career Questions</h5>
+                    <p class="text-muted">Use our AI voice assistant to ask any doubts about education, career domains, or skill development. Get instant, hands-free guidance.</p>
                 </div>
                 <div class="timeline-step" data-aos="fade-right" data-aos-delay="100">
                     <div class="timeline-icon">2</div>
-                    <h5>AI Does the Heavy Lifting</h5>
-                    <p class="text-muted">Our algorithm cross-references your profile with thousands of career paths and market trends to find your top matches.</p>
+                    <h5>Discover Your Ideal Domain</h5>
+                    <p class="text-muted">The AI analyzes your interests, skills, and preferences to suggest suitable career domains such as IT, teaching, medicine, or design.</p>
                 </div>
                 <div class="timeline-step" data-aos="fade-right" data-aos-delay="200">
                     <div class="timeline-icon">3</div>
-                    <h5>Unlock Your Personal Blueprint</h5>
-                    <p class="text-muted">Receive a detailed report with your best-fit careers, skill development plans, and actionable next steps.</p>
+                    <h5>Get Your Personalized Roadmap</h5>
+                    <p class="text-muted">Receive tailored recommendations, including skill-building paths, educational milestones, and actionable steps to achieve your dream career.</p>
                 </div>
             </div>
         </div>
@@ -414,46 +417,7 @@
     </section>
   </div>-->
 
-  <!--<div style="background-color:white;" id="review"> 
-   <div class="reviewmain"  data-aos="fade-up" style="font-size:20px">
-  <div class="left" style=" max-width: 450px;">
-    <div class="subheading" style="font-size:20px;">Real People, Real Impact</div>
-    <p>Don't just take our word for it.</p>
-    <button class="button" id="openingsBtn" type="button">
-      Openings
-      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M5 3l5 4-5 4" />
-      </svg>
-    </button>
-  </div>
-
-  <div class="right" id="reviewBox">
-    <div class="reviews-slider">
-    {% for r in reviews %}
-    <div class="review {% if forloop.first %}active{% endif %}">
-      
-      <h3>{{ r.user.username }}</h3>
-      <div class="stars">
-         {% for i in "12345"|make_list %}
-        {% if forloop.counter <= r.rating %}
-          <span class="star filled">★</span>
-        {% else %}
-          <span class="star">☆</span>
-        {% endif %}
-      {% endfor %}
-        </div>
-      <p>{{ r.text }}</p>
-      <small class="date">{{ r.created_at|date:"M d, Y" }}</small>
-    </div>
-    {% empty %}
-    <p>No reviews yet. Be the first to post!</p>
-  {% endfor %}
-  </div>
-    <div class="dots" id="dots"></div>
-    </div>
-  </div>
-</div>-->
-
+ 
 <!-- Accordion JS -->
 <!--<script>
   document.querySelectorAll(".faq-btn").forEach(button => {
@@ -480,7 +444,7 @@
       Your personalized career roadmap is just a few clicks away. <br>
       Start your free assessment now and take the first step towards a future you love.
     </p>
-    <a href="{% url 'user_page' %}">
+    <a href="">
     <button  id="btn-start" style=" border:3px solid white; padding: 10px; margin-top:20px;  border-radius:10px;  transition: all 0.3s ease;
       font-weight: bold; width:185px; height:55px; font-size:15px;">Let's Do This! <i class="bi bi-arrow-right-short"></i></button>
     </a>
@@ -500,8 +464,8 @@
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
       <!-- Left Side -->
       <div class="flex flex-col items-start space-y-1">
-        <h2 class="text-white text-xl font-semibold select-text">Career Guide</h2>
-        <p class="copyright">© 2024 CareerPath. All rights reserved.</p>
+        <h2 class="text-white text-xl font-semibold select-text">Learn Loop</h2>
+        <p class="copyright">© 2025 Learnloop. All rights reserved.</p>
       </div>
 
       <!-- Center Social Icons -->
